@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>聊聊《遗迹：灰烬重生》</title>
+    <url>/2023/11/02/Remnant/</url>
+    <content><![CDATA[<h2 id="🐍GN-7-10-捡了芝麻丢了西瓜"><a href="#🐍GN-7-10-捡了芝麻丢了西瓜" class="headerlink" title="🐍GN 7/10 捡了芝麻丢了西瓜"></a>🐍GN 7/10 捡了芝麻丢了西瓜</h2><p>作者为了所谓的魂味去强行缝合 TPS 与类魂，最终得到的结果是一个既有大部分射击游戏的缺点又有魂的缺点的作品，而魂本身的缺点在 TPS 这种游戏机制下也被放大了，射击游戏的堆怪与魂类的低容错相结合带来的体验可以说是比较差的。而作者对魂的优点的打磨，无论是关卡设计还是碎片化叙事，功力还是有所不足的，更别说射击游戏短平快的底子本身也与魂的这些优点有些许冲突，只能说是捡了芝麻丢了西瓜。<br>优点：</p>
+<ul>
+<li>优秀的枪械手感</li>
+<li>新鲜的流程设计</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>存在感极为薄弱的剧情与引导</li>
+<li>水平有限的碎片化叙事</li>
+<li>感知不强的成长系统</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>电子游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/11/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>MATH08074 Matlab Class Notes</title>
     <url>/2023/11/06/08074Matlab/</url>
-    <content><![CDATA[<h1 id="Lecture-1-Functions-Factorisation-and-Roots"><a href="#Lecture-1-Functions-Factorisation-and-Roots" class="headerlink" title="Lecture 1 Functions, Factorisation and Roots"></a>Lecture 1 Functions, Factorisation and Roots</h1><h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul>
+    <content><![CDATA[<p>这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 <code>doc</code> 命令就能解决的东西…… 发上来纯图一乐了。<br>有一节工程建模课，但不好做成笔记发上来。<br>个人学时：5 小时  </p>
+<span id="more"></span>
+<h1 id="Lecture-1-Functions-Factorisation-and-Roots"><a href="#Lecture-1-Functions-Factorisation-and-Roots" class="headerlink" title="Lecture 1 Functions, Factorisation and Roots"></a>Lecture 1 Functions, Factorisation and Roots</h1><h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul>
 <li><strong>single-variable</strong> functions:</li>
 </ul>
 <script type="math/tex; mode=display">
@@ -139,39 +174,6 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
         <tag>数学</tag>
         <tag>Matlab</tag>
         <tag>本校</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/11/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>聊聊《遗迹：灰烬重生》</title>
-    <url>/2023/11/02/Remnant/</url>
-    <content><![CDATA[<h2 id="🐍GN-7-10-捡了芝麻丢了西瓜"><a href="#🐍GN-7-10-捡了芝麻丢了西瓜" class="headerlink" title="🐍GN 7/10 捡了芝麻丢了西瓜"></a>🐍GN 7/10 捡了芝麻丢了西瓜</h2><p>作者为了所谓的魂味去强行缝合 TPS 与类魂，最终得到的结果是一个既有大部分射击游戏的缺点又有魂的缺点的作品，而魂本身的缺点在 TPS 这种游戏机制下也被放大了，射击游戏的堆怪与魂类的低容错相结合带来的体验可以说是比较差的。而作者对魂的优点的打磨，无论是关卡设计还是碎片化叙事，功力还是有所不足的，更别说射击游戏短平快的底子本身也与魂的这些优点有些许冲突，只能说是捡了芝麻丢了西瓜。<br>优点：</p>
-<ul>
-<li>优秀的枪械手感</li>
-<li>新鲜的流程设计</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>存在感极为薄弱的剧情与引导</li>
-<li>水平有限的碎片化叙事</li>
-<li>感知不强的成长系统</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>电子游戏</tag>
       </tags>
   </entry>
 </search>
