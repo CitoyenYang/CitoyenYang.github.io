@@ -3,11 +3,11 @@
   <title>Citoyen</title>
   
   <subtitle>Citoyen du Monde</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://citoyenyang.github.io/"/>
   <updated>2023-11-06T14:09:19.336Z</updated>
-  <id>http://example.com/</id>
+  <id>https://citoyenyang.github.io/</id>
   
   <author>
     <name>Citoyen Yang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>MATH08074 Matlab Class Notes</title>
-    <link href="http://example.com/2023/11/06/08074Matlab/"/>
-    <id>http://example.com/2023/11/06/08074Matlab/</id>
+    <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
+    <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
     <updated>2023-11-06T14:09:19.336Z</updated>
     
@@ -32,18 +32,18 @@
     
     
     
-    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="Matlab" scheme="http://example.com/tags/Matlab/"/>
+    <category term="Matlab" scheme="https://citoyenyang.github.io/tags/Matlab/"/>
     
-    <category term="本校" scheme="http://example.com/tags/%E6%9C%AC%E6%A0%A1/"/>
+    <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
     
   </entry>
   
   <entry>
     <title>聊聊《遗迹：灰烬重生》</title>
-    <link href="http://example.com/2023/11/02/Remnant/"/>
-    <id>http://example.com/2023/11/02/Remnant/</id>
+    <link href="https://citoyenyang.github.io/2023/11/02/Remnant/"/>
+    <id>https://citoyenyang.github.io/2023/11/02/Remnant/</id>
     <published>2023-11-02T15:06:35.000Z</published>
     <updated>2023-11-06T14:17:24.470Z</updated>
     
@@ -56,14 +56,14 @@
     
     
     
-    <category term="电子游戏" scheme="http://example.com/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2023/11/02/hello-world/"/>
-    <id>http://example.com/2023/11/02/hello-world/</id>
+    <link href="https://citoyenyang.github.io/2023/11/02/hello-world/"/>
+    <id>https://citoyenyang.github.io/2023/11/02/hello-world/</id>
     <published>2023-11-02T13:38:30.576Z</published>
     <updated>2023-11-02T13:38:30.576Z</updated>
     
