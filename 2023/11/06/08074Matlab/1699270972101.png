@@ -1,0 +1,349 @@
+# Lecture 1 Functions, Factorisation and Roots
+## Functions
+- **single-variable** functions: 
+$$f(x),\quad f(t), \quad g(t)$$
+- **multi-variable** functions:
+$$f(x_1,x_2),\quad g(t_1,t_2,...,t_{10})$$
+- $f(x)$ can be algebraic, trigonometric, exponential, etc
+### Function notation
+$$f:\mathbb{R}\to\mathbb{R},\quad\equiv f:(-\infty,+\infty)\to(-\infty,+\infty)$$
+- descibres a continuous, single-variable *f*
+- **domain**: the set before the arrow
+- **range**: the set after the arrow
+- domain and range needn't to be the same
+## Plotting functions
+- Visual examination of its properties
+	- Find the value at given *x*
+	- Find its roots
+	- Find its extrema
+	- All numerical programs will plot a function within a specified **closed interval**
+### Plotting functions in Matlab - Symbolic
+```Matlab
+syms x 
+f = 3*xˆ3 - 2*xˆ2 - x + 5
+```
+The defined *f(x)* won't show.
+Once x is registered (`syms x`), other functions of x can be defined
+```Matlab
+g = sin(x) + 3*x*cos(x)
+```
+To plot these functons over an interval [a,b] where a<b, `ezplot(function_name, [a,b])` is used 
+```Matlab
+ezplot (g,[0,10])
+```
+![[Pasted image 20231010021646.png]]
+Sums of functions defined can also be plotted
+```Matlab
+ezplot(g+f,[-2,2])
+```
+![[Pasted image 20231010021726.png]]
+```Matlab
+syms t 
+f=tˆ2
+g=tˆ2-16;
+ezplot(f,[-8,8])
+hold on % it allows multiple plots on the same graph
+ezplot(g,[-8,8])
+title(’f=tˆ2 g=tˆ2-16’)
+```
+![[Pasted image 20231010021822.png]]
+### Plotting functions in Matlab - Numerical
+- We evaluate its values at a series of points within interval of interest
+- To plot *f(x)* in [a,b], a list of many points should be defined
+- Matlab will connect the dots to make a graph
+```Matlab
+x = 0:0.1:10 %  a list from 0 to 10, every value has a separation 0.1
+f = 3*x.ˆ3 - 2*x.ˆ2 - x + 5 % .^ for power
+plot(x,f)
+xlabel(’x’)
+ylabel(’f(x)’)
+```
+![[Pasted image 20231010022247.png]]
+## Factorisation
+```Matlab
+syms x % symbolically
+factor(2*xˆ3+3*xˆ2-12*x+32,’FactorMode’,’complex’)
+
+% output
+
+ans = [ 2.0, x + 4.0, x - 1.25 + 1.56i, x - 1.25 - 1.56i]
+```
+thus: 
+$$\begin{aligned}f(x)\quad&=\quad2x^3+3x^2-12x+32\\&=\quad2(x+4)(x-1.25+1.56i)(x-1.25-1.56i)\end{aligned}$$
+## Root finding
+## Root finding - Symbolic
+The same as the example of factorisation above, four roots can be easily revealed
+$$x=-4,\quad x=1.25-1.56i,\quad x=1.25+1.56i.$$
+## Root finding - Numerical
+for $2x^3+3x^2-12x+32$: 
+```Matlab
+roots([2,3,-12,32])
+
+% output
+
+ans = 
+	-4.0000 + 0.0000i 
+	1.2500 + 1.5612i 
+	1.2500 - 1.5612i
+```
+
+
+# Lecture 2 Asymptotes, parametric representation, trig functions
+## Asymptotes
+### Definition of asymptote
+- asymptote: a **straight** line that continously approaches a given curve but does not meet it at any finite distance
+	- tells us: what happens to the value of the function as x → ±∞, and
+	- for which values of the variable x the value f(x) → ±∞.
+### Finding asymptotes
+```Matlab
+syms x
+f = (xˆ2-x-6)/(x+1)
+pretty(f) % this produces a ‘pretty’ output
+ezplot(f,[-8,8])
+grid % this produces a grid on the plot
+```
+![[Pasted image 20231010031601.png]]
+- Plot the graph and add grid to spot the asymptotes
+	- Plot again for increased interval and decreased step
+	- Use `grid minor` to produce a finer grid
+## Parametric representation
+```Matlab
+syms t >> x = tˆ3; y = tˆ2;
+ezplot(x,y,[-2,2]); % [-2,2] is the t range
+```
+![[Pasted image 20231010031819.png]]
+## Trigonometric functions
+$$\sin t,\quad\cos t,\quad\tan t,\quad\sec t,\quad\csc t,\quad\cot t.$$
+- `csc(t)` to express trig functions
+- `pi`: constant that equals to $\pi$ 
+- The trig rxpressions are defined and symbolically or numerically plotted just like algebraic one
+## Useful commands
+- `expand`: Expands a compact expression for further analysis
+- `simplify`: Simplifies a complicated expression
+- `solve`: Solves algebraic and trigonometric equations
+
+
+
+# Lecture 3 Inverse trig funcs, polar Coords, Exp log and  hyperbolic funcs
+## inverse trigonometric functions
+- $\sin^{-1}(x)$ is denoted as `asin(x)` in Matlab, so do others
+- The value of functions is always in **radians**
+## Polar coordinates
+- Switch between two coordinate systems
+```Matlab
+[theta,r] = cart2pol(x,y); 
+[x,y] = pol2cart(theta,r);
+```
+- Use Matlab to plot a circle of radius 3 centred at (-1,-1)
+```Matlab
+theta =0:0.01:2*pi; 
+x0 = -1; y0 = -1; r = 3;  % Create coord.s of circle centred the origin:
+[x,y]=pol2cart(theta,r);
+xc = x0+x; % These two lines shift the circle
+yc = y0+y; % to be centred at (x0,y0)
+plot(xc,yc); xlabel(’x’); ylabel(’y’);
+daspect([1 1 1]); % Set equal aspect ratio >> grid;
+hold on; plot(x0,y0,’x’,’Color’,’r’);
+```
+![[Pasted image 20231010033039.png]]
+- Use Matlab to plot a polar form graph $r = 6 \cos \theta$
+![[Pasted image 20231010113448.png]]
+
+## Exponential functions
+- $f(x)=e^x$ is defined as `exp(x)`
+- logarithm: `log(x)`
+## Hyperbolic functions
+```Matlab
+sinh(x)
+cosh(x)
+tanh(x)
+```
+
+
+# Lecture 4 Complex Numbers and Complex Functions
+## Complex Numbers
+### Definitions in Matlab
+```Matlab
+syms a b 
+z = a + b*i
+% Symbolically
+
+z = -i
+% Numerically
+```
+### Computing the modulus and argument
+```Matlab
+z = -2*i;
+
+abs(z) % ans = 2
+angle(z) % ans = -1.5708
+conj(z) % ans = 0 + 2i
+```
+### Complex numbers in phasor (polar) form
+```Matlab
+[theta,abs_z] = cart2pol(real(z),imag(z));
+abs_z = abs(z)
+theta = angle(z)
+```
+
+
+# Lecture 6 Vectors
+## Definition of vectors in Matlab
+```Matlab
+% Symbolically
+syms x y z 
+f = [2*x*y; (1+z); (x+y-z)^2]
+
+% Numerically
+% Column definition
+a = [0;1;0];
+% Row definition
+a = [ 1 5 7 ];
+```
+## Vector norm
+$$|a| = \sqrt{a^2_x+a^2_y+a^2_z}\geq0$$
+$$|p-q|=|q-p|$$
+```Matlab
+p=[2;-1;3]; q=[-1;-3;5];
+norm(p) % ans = 3.7417
+norm(q) % ans = 5.9161
+norm(p-q) % ans = 4.1231
+```
+## Other operations
+```Matlab
+% Scalar multiplication
+>>p = [2;-1;3]
+>>2*p
+ans = 
+	4
+	-2
+	6
+
+% Inner product or Dot product
+>> a = [1;-2;3]; b = [-4;5;-6];
+>> dot(a,b)
+ans = 
+	-32
+
+>> a' % transpose of a
+
+% Cross product
+>> a = [1;0;1]; b=[0;2;0];
+>> cross(a,b)
+ans = 
+	-2
+	0
+	2
+>> cross(b,a)
+ans = 
+	2
+	0
+	-2
+```
+
+
+# Lecture 7 Matrices and Eigenvalues
+## Matrices
+- Matlab is designed to work with matrices. Matlab is short for "Matrix Laboratory"
+```Matlab
+ % Matrix definitions
+>> A = [1,0,-1;3,1,7;0,-3,9]
+A = 
+	1  0 -1
+	3  1  7
+	0 -3  9
+
+% Transposition
+>> A = [4,5,-1; 3,8,0; 6,1,2]
+A = 
+	4  5 -1
+	3  8  0
+	6  1  2
+
+>> A.'
+ans = 
+	4  3  6
+	5  8  1
+    -1 0  2
+
+% Select colums, rows and elements
+>> A = [2,3,4; 7,9,0; 6,4,1];
+>> A(2,:)
+ans = 
+	7  9  0
+
+>> A(3,1)
+ans = 
+	6
+
+>> A(:,1)
+ans = 
+	2
+	7
+	6
+
+% Add, subtract, scalar multiplication
+>> C = A + B;
+>> C = 3 * A
+
+% Element-wise multiplication
+% ".* is used"
+% Hadamard product
+>> A = [-2,-4,3; 8,1,2];
+>> B = [5,6,4; 7,9,-3];
+>> C= A .* B 
+C = 
+	-10 -24  12
+	 56  9   -6
+
+% Matrix product
+% * is used
+>> A = [-2,-4,3; 8,1,2];
+>> B = [5,-1; 7,2; 6,-3];
+>> C = A*B
+C = 
+	-20  -15
+	 59  -12
+```
+### Linear systems of equations
+$$\begin{array}{rcl}x_1+2x_2&=&-1\\3x_1+4x_2&=&-1\end{array}$$
+$$A=\begin{pmatrix}1&2\\3&4\end{pmatrix},\quad x=\begin{pmatrix}x_1\\x_2\end{pmatrix},\quad b=\begin{pmatrix}-1\\-1\end{pmatrix}$$
+$$\text{From }Ax=b\text{, we can get }x=A^{-1}b$$
+```Matlab
+% Normal Solution
+>> syms x1 x2
+>> [Sx1, Sx2] = solve(x1 + 2*x2 == -1)
+
+% Matrix Solution
+>> A = [1;2;3;4];
+>> b = -[1;1];
+>> x = inv(A)*b % or "x = A\b"
+x = 
+	 1
+	-1
+
+% Determinants
+>> A = [4,5,-1; 3,8,0; 6,1,2]
+>> det(A)
+ans = 
+	79
+```
+## Orthogonal matrices 正交矩阵
+- If *A* is orthogonal then: 
+	- $A^TA=AA^T=I$
+	- $A^{-1}=A^T$
+- Rotation matrices are classical orthogonal matrices
+$$R_{2D}=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$$
+$$R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix}$$
+## Eigenvalues and eigenvectors
+```Matlab
+>> A = [1, 0, -4; 0, 5, 4; -4, 4, 3];
+>> eigval = eig(A)
+eigval = 
+	-3.0000
+	 3.0000
+	 9.0000
+```
+- Engineering Application: vibration
+
+

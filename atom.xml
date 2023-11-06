@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Citoyen</title>
+  
+  <subtitle>Citoyen du Monde</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-11-06T14:09:19.336Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Citoyen Yang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MATH08074 Matlab Class Notes</title>
+    <link href="http://example.com/2023/11/06/08074Matlab/"/>
+    <id>http://example.com/2023/11/06/08074Matlab/</id>
+    <published>2023-11-06T11:57:03.000Z</published>
+    <updated>2023-11-06T14:09:19.336Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Lecture-1-Functions-Factorisation-and-Roots&quot;&gt;&lt;a href=&quot;#Lecture-1-Functions-Factorisation-and-Roots&quot; class=&quot;headerlink&quot; title=&quot;Lectur</summary>
+      
+    
+    
+    
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="Matlab" scheme="http://example.com/tags/Matlab/"/>
+    
+    <category term="本校" scheme="http://example.com/tags/%E6%9C%AC%E6%A0%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊《遗迹：灰烬重生》</title>
+    <link href="http://example.com/2023/11/02/Remnant/"/>
+    <id>http://example.com/2023/11/02/Remnant/</id>
+    <published>2023-11-02T15:06:35.000Z</published>
+    <updated>2023-11-02T15:23:46.561Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;🐍GN-7-10-捡了芝麻丢了西瓜&quot;&gt;&lt;a href=&quot;#🐍GN-7-10-捡了芝麻丢了西瓜&quot; class=&quot;headerlink&quot; title=&quot;🐍GN 7/10 捡了芝麻丢了西瓜&quot;&gt;&lt;/a&gt;🐍GN 7/10 捡了芝麻丢了西瓜&lt;/h2&gt;&lt;p&gt;作者为了所谓</summary>
+      
+    
+    
+    
+    
+    <category term="电子游戏" scheme="http://example.com/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/11/02/hello-world/"/>
+    <id>http://example.com/2023/11/02/hello-world/</id>
+    <published>2023-11-02T13:38:30.576Z</published>
+    <updated>2023-11-02T13:38:30.576Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

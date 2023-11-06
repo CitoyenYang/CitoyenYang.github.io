@@ -20,28 +20,44 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Citoyen">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Lecture 1 Functions, Factorisation and RootsFunctions single-variable functions:   f(x),\quad f(t), \quad g(t) multi-variable functions:   f(x_1,x_2),\quad g(t_1,t_2,...,t_{10})  can be algebraic, tri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATH08074 Matlab Class Notes">
+<meta property="og:url" content="http://example.com/2023/11/06/08074Matlab/index.html">
 <meta property="og:site_name" content="Citoyen">
+<meta property="og:description" content="Lecture 1 Functions, Factorisation and RootsFunctions single-variable functions:   f(x),\quad f(t), \quad g(t) multi-variable functions:   f(x_1,x_2),\quad g(t_1,t_2,...,t_{10})  can be algebraic, tri">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/.com//1699271635916.png">
+<meta property="og:image" content="http://example.com/.com//1699271658903.png">
+<meta property="og:image" content="http://example.com/.com//1699271675647.png">
+<meta property="og:image" content="http://example.com/.com//1699271694099.png">
+<meta property="og:image" content="http://example.com/.com//1699271717550.png">
+<meta property="og:image" content="http://example.com/.com//1699271729424.png">
+<meta property="og:image" content="http://example.com/.com//1699271746829.png">
+<meta property="og:image" content="http://example.com/.com//1699271756228.png">
+<meta property="article:published_time" content="2023-11-06T11:57:03.000Z">
+<meta property="article:modified_time" content="2023-11-06T14:09:19.336Z">
 <meta property="article:author" content="Citoyen Yang">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="Matlab">
+<meta property="article:tag" content="本校">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/.com//1699271635916.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/11/06/08074Matlab/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Citoyen</title>
+  <title>MATH08074 Matlab Class Notes | Citoyen</title>
   
 
 
@@ -281,9 +297,10 @@ mjx-container[display="true"] + br {
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -299,10 +316,9 @@ mjx-container[display="true"] + br {
       <meta itemprop="name" content="Citoyen">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/06/08074Matlab/" class="post-title-link" itemprop="url">MATH08074 Matlab Class Notes</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          MATH08074 Matlab Class Notes
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -340,7 +356,7 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Lecture-1-Functions-Factorisation-and-Roots"><a href="#Lecture-1-Functions-Factorisation-and-Roots" class="headerlink" title="Lecture 1 Functions, Factorisation and Roots"></a>Lecture 1 Functions, Factorisation and Roots</h1><h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul>
+        <h1 id="Lecture-1-Functions-Factorisation-and-Roots"><a href="#Lecture-1-Functions-Factorisation-and-Roots" class="headerlink" title="Lecture 1 Functions, Factorisation and Roots"></a>Lecture 1 Functions, Factorisation and Roots</h1><h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><ul>
 <li><strong>single-variable</strong> functions:</li>
 </ul>
 <script type="math/tex; mode=display">
@@ -472,184 +488,35 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
 <li>Engineering Application: vibration</li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+              <a href="/tags/Matlab/" rel="tag"># Matlab</a>
+              <a href="/tags/%E6%9C%AC%E6%A0%A1/" rel="tag"># 本校</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/02/Remnant/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Citoyen Yang">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Citoyen">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/02/Remnant/" class="post-title-link" itemprop="url">聊聊《遗迹：灰烬重生》</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-11-02 15:06:35 / 修改时间：15:23:46" itemprop="dateCreated datePublished" datetime="2023-11-02T15:06:35+00:00">2023-11-02</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>255</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="🐍GN-7-10-捡了芝麻丢了西瓜"><a href="#🐍GN-7-10-捡了芝麻丢了西瓜" class="headerlink" title="🐍GN 7/10 捡了芝麻丢了西瓜"></a>🐍GN 7/10 捡了芝麻丢了西瓜</h2><p>作者为了所谓的魂味去强行缝合 TPS 与类魂，最终得到的结果是一个既有大部分射击游戏的缺点又有魂的缺点的作品，而魂本身的缺点在 TPS 这种游戏机制下也被放大了，射击游戏的堆怪与魂类的低容错相结合带来的体验可以说是比较差的。而作者对魂的优点的打磨，无论是关卡设计还是碎片化叙事，功力还是有所不足的，更别说射击游戏短平快的底子本身也与魂的这些优点有些许冲突，只能说是捡了芝麻丢了西瓜。<br>优点：</p>
-<ul>
-<li>优秀的枪械手感</li>
-<li>新鲜的流程设计</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>存在感极为薄弱的剧情与引导</li>
-<li>水平有限的碎片化叙事</li>
-<li>感知不强的成长系统</li>
-</ul>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/11/02/Remnant/" rel="prev" title="聊聊《遗迹：灰烬重生》">
+      <i class="fa fa-chevron-left"></i> 聊聊《遗迹：灰烬重生》
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/02/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Citoyen Yang">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Citoyen">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/02/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-11-02 13:38:30" itemprop="dateCreated datePublished" datetime="2023-11-02T13:38:30+00:00">2023-11-02</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -702,6 +569,7 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-1-Functions-Factorisation-and-Roots"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1 Functions, Factorisation and Roots</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Functions"><span class="nav-number">1.1.</span> <span class="nav-text">Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Function-notation"><span class="nav-number">1.1.1.</span> <span class="nav-text">Function notation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Plotting-functions"><span class="nav-number">1.2.</span> <span class="nav-text">Plotting functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Plotting-functions-in-Matlab-Symbolic"><span class="nav-number">1.2.1.</span> <span class="nav-text">Plotting functions in Matlab - Symbolic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Plotting-functions-in-Matlab-Numerical"><span class="nav-number">1.2.2.</span> <span class="nav-text">Plotting functions in Matlab - Numerical</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Factorisation"><span class="nav-number">1.3.</span> <span class="nav-text">Factorisation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Root-finding"><span class="nav-number">1.4.</span> <span class="nav-text">Root finding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Root-finding-Symbolic"><span class="nav-number">1.5.</span> <span class="nav-text">Root finding - Symbolic</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Root-finding-Numerical"><span class="nav-number">1.6.</span> <span class="nav-text">Root finding - Numerical</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-2-Asymptotes-parametric-representation-trig-functions"><span class="nav-number">2.</span> <span class="nav-text">Lecture 2 Asymptotes, parametric representation, trig functions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Asymptotes"><span class="nav-number">2.1.</span> <span class="nav-text">Asymptotes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Definition-of-asymptote"><span class="nav-number">2.1.1.</span> <span class="nav-text">Definition of asymptote</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Finding-asymptotes"><span class="nav-number">2.1.2.</span> <span class="nav-text">Finding asymptotes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Parametric-representation"><span class="nav-number">2.2.</span> <span class="nav-text">Parametric representation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trigonometric-functions"><span class="nav-number">2.3.</span> <span class="nav-text">Trigonometric functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Useful-commands"><span class="nav-number">2.4.</span> <span class="nav-text">Useful commands</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-3-Inverse-trig-funcs-polar-Coords-Exp-log-and-hyperbolic-funcs"><span class="nav-number">3.</span> <span class="nav-text">Lecture 3 Inverse trig funcs, polar Coords, Exp log and  hyperbolic funcs</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#inverse-trigonometric-functions"><span class="nav-number">3.1.</span> <span class="nav-text">inverse trigonometric functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Polar-coordinates"><span class="nav-number">3.2.</span> <span class="nav-text">Polar coordinates</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exponential-functions"><span class="nav-number">3.3.</span> <span class="nav-text">Exponential functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hyperbolic-functions"><span class="nav-number">3.4.</span> <span class="nav-text">Hyperbolic functions</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-4-Complex-Numbers-and-Complex-Functions"><span class="nav-number">4.</span> <span class="nav-text">Lecture 4 Complex Numbers and Complex Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Complex-Numbers"><span class="nav-number">4.1.</span> <span class="nav-text">Complex Numbers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Definitions-in-Matlab"><span class="nav-number">4.1.1.</span> <span class="nav-text">Definitions in Matlab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Computing-the-modulus-and-argument"><span class="nav-number">4.1.2.</span> <span class="nav-text">Computing the modulus and argument</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Complex-numbers-in-phasor-polar-form"><span class="nav-number">4.1.3.</span> <span class="nav-text">Complex numbers in phasor (polar) form</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-6-Vectors"><span class="nav-number">5.</span> <span class="nav-text">Lecture 6 Vectors</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Definition-of-vectors-in-Matlab"><span class="nav-number">5.1.</span> <span class="nav-text">Definition of vectors in Matlab</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vector-norm"><span class="nav-number">5.2.</span> <span class="nav-text">Vector norm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Other-operations"><span class="nav-number">5.3.</span> <span class="nav-text">Other operations</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lecture-7-Matrices-and-Eigenvalues"><span class="nav-number">6.</span> <span class="nav-text">Lecture 7 Matrices and Eigenvalues</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Matrices"><span class="nav-number">6.1.</span> <span class="nav-text">Matrices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-systems-of-equation"><span class="nav-number">6.1.1.</span> <span class="nav-text">Linear systems of equation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Orthogonal-matrices-%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5"><span class="nav-number">6.2.</span> <span class="nav-text">Orthogonal matrices 正交矩阵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Eigenvalues-and-eigenvectors"><span class="nav-number">6.3.</span> <span class="nav-text">Eigenvalues and eigenvectors</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
