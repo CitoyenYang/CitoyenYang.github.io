@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2023-11-06T14:37:24.166Z</updated>
+  <updated>2023-11-28T10:15:12.870Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -17,14 +17,75 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>MATH08074 Matlab Class Notes</title>
+    <title>INFR08025 Computational Logic Lecture Notes (Introduction to Computation)</title>
+    <link href="https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/"/>
+    <id>https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</id>
+    <published>2023-11-28T10:14:24.000Z</published>
+    <updated>2023-11-28T10:15:12.870Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，这门课开设得比较奇怪，有点像是离散数学与算法导论。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
+    
+    <category term="计算机科学" scheme="https://citoyenyang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
+    
+    <category term="数学-离散数学" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="逻辑学" scheme="https://citoyenyang.github.io/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/"/>
+    
+    <category term="Haskell" scheme="https://citoyenyang.github.io/tags/Haskell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人电子游戏评测</title>
+    <link href="https://citoyenyang.github.io/2023/11/18/vgr/"/>
+    <id>https://citoyenyang.github.io/2023/11/18/vgr/</id>
+    <published>2023-11-18T09:00:00.000Z</published>
+    <updated>2023-11-18T09:18:30.607Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;个人电子游戏评测汇总&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>置顶</title>
+    <link href="https://citoyenyang.github.io/2023/11/06/%E7%BD%AE%E9%A1%B6/"/>
+    <id>https://citoyenyang.github.io/2023/11/06/%E7%BD%AE%E9%A1%B6/</id>
+    <published>2023-11-06T14:45:05.000Z</published>
+    <updated>2023-11-06T14:52:26.397Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Now-Learning&quot;&gt;&lt;a href=&quot;#Now-Learning&quot; class=&quot;headerlink&quot; title=&quot;Now Learning:&quot;&gt;&lt;/a&gt;Now Learning:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Introductory C</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MATH08074 Matlab Lecture Notes</title>
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2023-11-06T14:37:24.166Z</updated>
+    <updated>2023-11-08T12:23:52.212Z</updated>
     
     
-    <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时  &lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>
     
     
     
@@ -42,12 +103,12 @@
     <link href="https://citoyenyang.github.io/2023/11/02/Remnant/"/>
     <id>https://citoyenyang.github.io/2023/11/02/Remnant/</id>
     <published>2023-11-02T15:06:35.000Z</published>
-    <updated>2023-11-06T14:17:24.470Z</updated>
+    <updated>2023-11-06T14:54:09.336Z</updated>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;🐍GN-7-10-捡了芝麻丢了西瓜&quot;&gt;&lt;a href=&quot;#🐍GN-7-10-捡了芝麻丢了西瓜&quot; class=&quot;headerlink&quot; title=&quot;🐍GN 7/10 捡了芝麻丢了西瓜&quot;&gt;&lt;/a&gt;🐍GN 7/10 捡了芝麻丢了西瓜&lt;/h2&gt;&lt;p&gt;作者为了所谓</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
