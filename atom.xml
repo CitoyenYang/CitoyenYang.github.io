@@ -68,8 +68,7 @@
     
       
       
-    <summary type="html">&lt;h2 id=&quot;Now-Learning&quot;&gt;&lt;a href=&quot;#Now-Learning&quot; class=&quot;headerlink&quot; title=&quot;Now Learning:&quot;&gt;&lt;/a&gt;Now Learning:&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Introductory C</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -82,7 +81,7 @@
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2023-11-08T12:23:52.212Z</updated>
+    <updated>2023-11-21T04:48:11.947Z</updated>
     
     
     <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>

@@ -3,7 +3,7 @@
   <entry>
     <title>置顶</title>
     <url>/2023/11/06/%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<h2 id="Now-Learning"><a href="#Now-Learning" class="headerlink" title="Now Learning:"></a>Now Learning:</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Now-Learning"><a href="#Now-Learning" class="headerlink" title="Now Learning:"></a>Now Learning:</h2><ul>
 <li><strong>Introductory Circuit Analysis, Boylestad</strong> 电路分析导论</li>
 <li> Modern Engineering Mathematics, Glyn 现代工程数学</li>
 <li> UCB CS61A Structure and Interpretation of Computer Programs 计算机程序的构造与解释</li>
