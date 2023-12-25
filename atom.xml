@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2023-11-28T10:15:12.870Z</updated>
+  <updated>2023-12-16T13:08:23.355Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>INFR08025 Computational Logic Lecture Notes (Introduction to Computation)</title>
+    <title>WSL 更改密码</title>
+    <link href="https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/"/>
+    <id>https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/</id>
+    <published>2023-12-16T12:49:48.000Z</published>
+    <updated>2023-12-16T13:08:23.355Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://citoyenyang.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>INFR08025 Computational Logic Lecture Notes (Introduction to Computation) Fall 2023</title>
     <link href="https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/"/>
     <id>https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</id>
     <published>2023-11-28T10:14:24.000Z</published>
-    <updated>2023-11-28T10:15:12.870Z</updated>
+    <updated>2023-11-28T10:45:15.938Z</updated>
     
     
     <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，这门课开设得比较奇怪，有点像是离散数学与算法导论。&lt;/p&gt;</summary>
@@ -77,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>MATH08074 Matlab Lecture Notes</title>
+    <title>MATH08074 Matlab Lecture Notes Fall 2023</title>
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2023-11-21T04:48:11.947Z</updated>
+    <updated>2023-11-28T11:01:04.206Z</updated>
     
     
     <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>
