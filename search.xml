@@ -25,17 +25,14 @@
 <li>在 Obsidian 的 Github Release 中下载 <code>obsidian-1.5.3.asar.gz</code></li>
 <li><p>解压至无法解压的级别</p>
 <figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> npm install <span class="literal">-g</span> @electron/asar</span><br><span class="line"><span class="variable">$</span> asar extract app.asar ./app</span><br></pre></td></tr></tbody></table></figure></li>
-<li>用文本编辑器打开 <code>index.html</code>，并删除  <code>&lt;metahttp-equiv="Content-Security-Policy"content="style-src 'unsafe-inline' 'self' https://fonts.googleapis.com"&gt;</code></li>
-</ol>
-<p><img src="https://file+.vscode-resource.vscode-cdn.net/d%3A/MyBlog/Blog/CitoyenYang.github.io/source/_posts/image/Fix-Annotator-Ob1-5/1703963327202.png" alt="1703963327202"></p>
-<ol>
-<li><p>用文本编辑器打开 <code>package.json</code>，将 <code>"main": "index.js"</code> 改为 <code>"main": "main.js"</code></p>
-<p><img src="/2023/12/30/Fix-Annotator-Ob1-5/Fix-Annotator-Ob1-5/1703968329003.png" alt="1703968329003"></p>
+<li><p>用文本编辑器打开 <code>index.html</code>，并删除  <code>&lt;metahttp-equiv="Content-Security-Policy"content="style-src 'unsafe-inline' 'self' https://fonts.googleapis.com"&gt;</code></p>
+<p><img src="/2023/12/30/Fix-Annotator-Ob1-5/1703963327202.png" alt="1703963327202"></p>
 </li>
-<li>重新打包为 <code>asar</code></li>
-</ol>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> asar pack .\obsidian<span class="literal">-1</span>.<span class="number">5.3</span> obsidian<span class="literal">-1</span>.<span class="number">5.3</span>.asar</span><br></pre></td></tr></tbody></table></figure>
-<ol>
+<li><p>用文本编辑器打开 <code>package.json</code>，将 <code>"main": "index.js"</code> 改为 <code>"main": "main.js"</code></p>
+<p><img src="/2023/12/30/Fix-Annotator-Ob1-5/1703968329003.png" alt="1703968329003"></p>
+</li>
+<li><p>重新打包为 <code>asar</code></p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> asar pack .\obsidian<span class="literal">-1</span>.<span class="number">5.3</span> obsidian<span class="literal">-1</span>.<span class="number">5.3</span>.asar</span><br></pre></td></tr></tbody></table></figure></li>
 <li>将 <code>obsidian-1.5.3.asar</code> 放入 <code>obsidian</code> 文件夹<ul>
 <li>在搜索框中搜索 <code>%APPDATA%</code></li>
 <li>找到该目录下的 <code>obsidian</code> (<code>C:\Users\&lt;UserName&gt;\AppData\Roaming\obsidian</code>)</li>
@@ -43,7 +40,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/elias-sundqvist/obsidian-annotator/issues/356"> Annotator not renderring properly #356 (github.com)</a></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/elias-sundqvist/obsidian-annotator/issues/356">Annotator not renderring properly #356 (github.com)</a><br><a href="https://github.com/electron/asar">@electron/asar - Electron Archive (github.com)</a></p>
 ]]></content>
       <tags>
         <tag>Obsidian</tag>
