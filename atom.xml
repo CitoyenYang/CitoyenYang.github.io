@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2023-12-16T13:08:23.355Z</updated>
+  <updated>2023-12-30T20:42:09.664Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修复 Obsidian v1.5 下插件 Annotator 无法运行的问题</title>
+    <link href="https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/"/>
+    <id>https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/</id>
+    <published>2023-12-30T18:55:31.000Z</published>
+    <updated>2023-12-30T20:42:09.664Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;备注：本文默认用户&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已安装 &lt;code&gt;node.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用的是 Windows 11 操作系统&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="Obsidian" scheme="https://citoyenyang.github.io/tags/Obsidian/"/>
+    
+    <category term="Electron" scheme="https://citoyenyang.github.io/tags/Electron/"/>
+    
+  </entry>
   
   <entry>
     <title>WSL 更改密码</title>
@@ -33,6 +56,26 @@
     
     
     <category term="Linux" scheme="https://citoyenyang.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023 年购入的电子产品与简评</title>
+    <link href="https://citoyenyang.github.io/2023/12/05/Prod2023/"/>
+    <id>https://citoyenyang.github.io/2023/12/05/Prod2023/</id>
+    <published>2023-12-05T03:02:32.853Z</published>
+    <updated>2023-12-30T18:54:55.120Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="电子产品" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   

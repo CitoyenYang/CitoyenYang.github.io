@@ -11,6 +11,46 @@
 ]]></content>
   </entry>
   <entry>
+    <title>修复 Obsidian v1.5 下插件 Annotator 无法运行的问题</title>
+    <url>/2023/12/30/Fix-Annotator-Ob1-5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>备注：本文默认用户</p>
+<ul>
+<li>已安装 <code>node.js</code></li>
+<li>使用的是 Windows 11 操作系统</li>
+</ul>
+<span id="more"></span>
+<ol>
+<li><p>检测是否安装 <code>node.js</code> 与 <code>npm</code></p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> node <span class="literal">-v</span></span><br><span class="line">v20.<span class="number">9.0</span></span><br><span class="line"><span class="variable">$</span> npm <span class="literal">-v</span> </span><br><span class="line"><span class="number">10.1</span>.<span class="number">0</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li>在 Obsidian 的 Github Release 中下载 <code>obsidian-1.5.3.asar.gz</code></li>
+<li><p>解压至无法解压的级别</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> npm install <span class="literal">-g</span> @electron/asar</span><br><span class="line"><span class="variable">$</span> asar extract app.asar ./app</span><br></pre></td></tr></tbody></table></figure></li>
+<li>用文本编辑器打开 <code>index.html</code>，并删除  <code>&lt;metahttp-equiv="Content-Security-Policy"content="style-src 'unsafe-inline' 'self' https://fonts.googleapis.com"&gt;</code></li>
+</ol>
+<p><img src="https://file+.vscode-resource.vscode-cdn.net/d%3A/MyBlog/Blog/CitoyenYang.github.io/source/_posts/image/Fix-Annotator-Ob1-5/1703963327202.png" alt="1703963327202"></p>
+<ol>
+<li><p>用文本编辑器打开 <code>package.json</code>，将 <code>"main": "index.js"</code> 改为 <code>"main": "main.js"</code></p>
+<p><img src="/2023/12/30/Fix-Annotator-Ob1-5/Fix-Annotator-Ob1-5/1703968329003.png" alt="1703968329003"></p>
+</li>
+<li>重新打包为 <code>asar</code></li>
+</ol>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$</span> asar pack .\obsidian<span class="literal">-1</span>.<span class="number">5.3</span> obsidian<span class="literal">-1</span>.<span class="number">5.3</span>.asar</span><br></pre></td></tr></tbody></table></figure>
+<ol>
+<li>将 <code>obsidian-1.5.3.asar</code> 放入 <code>obsidian</code> 文件夹<ul>
+<li>在搜索框中搜索 <code>%APPDATA%</code></li>
+<li>找到该目录下的 <code>obsidian</code> (<code>C:\Users\&lt;UserName&gt;\AppData\Roaming\obsidian</code>)</li>
+<li> 覆盖 <code>obsidian-1.5.3.asar</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/elias-sundqvist/obsidian-annotator/issues/356"> Annotator not renderring properly #356 (github.com)</a></p>
+]]></content>
+      <tags>
+        <tag>Obsidian</tag>
+        <tag>Electron</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WSL 更改密码</title>
     <url>/2023/12/16/WSL-reset-pwd/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
@@ -33,6 +73,24 @@
 ]]></content>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2023 年购入的电子产品与简评</title>
+    <url>/2023/12/05/Prod2023/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li>三星 Galaxy S20 (韩)<br>入坑洋垃圾三星的第一部作品，购买的契机是转阴之后感觉浑身无力，想换台轻的耍耍。只能说是非常喜欢的一部机器，难怪洋垃圾三星价格永远居高不下。</li>
+<li>三星 Galaxy S23 Ultra (港)<br>近几年玩过最喜欢的手机，好久没用过续航这么长的机器了，上一部还是 Mate 30。唯二的缺点是 nfc 很不灵敏和最 cjb 的康宁大猩猩玻璃，后悔没贴膜。</li>
+<li>三星 Galaxy Watch 6 Classic (港)</li>
+<li>BOSE QC45<br>降噪 nb，麦克风垃圾，音质远大于 1000XM4，如果没有打电话需求就是最顶的便捷降噪耳机。</li>
+<li>雷蛇黑寡妇 v3 mini<br>老键盘保修期退款置换的，配列的限制导致可 remap 的键太少了，这点我非常不喜欢，配列的限制也是我买 Surface 人体工学键盘的原因之一，还有就是光速退格双击，等回国保修了</li>
+<li>微软折叠键盘<br>很符合我对微软硬件品控的想象，半年出问题。</li>
+<li>LG 27UK850<br>在英国这种数码产品洼地能买到这种显示器已经是万幸了，没什么缺点的东西。</li>
+<li>拜亚动力 DT 770 Pro<br>极少数在英国这种洼地价格和国内差不多的东西，买来玩玩，效果意外的不错。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>电子产品</tag>
       </tags>
   </entry>
   <entry>
