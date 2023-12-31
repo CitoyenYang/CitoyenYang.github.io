@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2023-12-30T20:48:51.532Z</updated>
+  <updated>2023-12-31T07:02:02.008Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《数字设计与计算机体系结构》第五章算术电路白板笔记</title>
+    <link href="https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/"/>
+    <id>https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/</id>
+    <published>2023-12-31T06:57:19.000Z</published>
+    <updated>2023-12-31T07:02:02.008Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.uk/Digital-Design-Computer-Architecture-RISC-V/dp/0128200642&quot;&gt;Digital Design and Computer Architecture, RISC-V Edition, Harris, Sarah &amp;amp; Harris, David (amazon.co.uk)&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="数字电路" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>修复 Obsidian v1.5 下插件 Annotator 无法运行的问题</title>
@@ -118,24 +135,6 @@
     
     
     <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>置顶</title>
-    <link href="https://citoyenyang.github.io/2023/11/06/%E7%BD%AE%E9%A1%B6/"/>
-    <id>https://citoyenyang.github.io/2023/11/06/%E7%BD%AE%E9%A1%B6/</id>
-    <published>2023-11-06T14:45:05.000Z</published>
-    <updated>2023-11-06T14:52:26.397Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
     
   </entry>
   
