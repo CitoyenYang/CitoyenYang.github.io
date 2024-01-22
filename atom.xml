@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Citoyen</title>
   
-  <subtitle>Citoyen du Monde</subtitle>
+  <subtitle>BEng Full Stack Engineering @ Wild Chicken University</subtitle>
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
@@ -38,7 +38,7 @@
     <link href="https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/"/>
     <id>https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/</id>
     <published>2023-12-30T18:55:31.000Z</published>
-    <updated>2023-12-30T20:48:51.532Z</updated>
+    <updated>2024-01-22T13:39:15.725Z</updated>
     
     
     <summary type="html">&lt;p&gt;备注：本文默认用户&lt;/p&gt;
@@ -50,9 +50,7 @@
     
     
     
-    <category term="Obsidian" scheme="https://citoyenyang.github.io/tags/Obsidian/"/>
-    
-    <category term="Electron" scheme="https://citoyenyang.github.io/tags/Electron/"/>
+    <category term="工具" scheme="https://citoyenyang.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -126,7 +124,7 @@
     <link href="https://citoyenyang.github.io/2023/11/18/vgr/"/>
     <id>https://citoyenyang.github.io/2023/11/18/vgr/</id>
     <published>2023-11-18T09:00:00.000Z</published>
-    <updated>2023-11-18T09:18:30.607Z</updated>
+    <updated>2024-01-06T10:11:31.504Z</updated>
     
     
     <summary type="html">&lt;p&gt;个人电子游戏评测汇总&lt;br&gt;&lt;/p&gt;</summary>
