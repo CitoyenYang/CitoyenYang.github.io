@@ -19,6 +19,13 @@
 <li> BUG 偏多</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>电子游戏</category>
+        <category>TPS</category>
+      </categories>
+      <tags>
+        <tag>电子游戏</tag>
+      </tags>
   </entry>
   <entry>
     <title>《数字设计与计算机体系结构》第五章算术电路白板笔记</title>
@@ -27,6 +34,9 @@
 <span id="more"></span>
 <p><img src="/2023/12/31/DDCA-ch5-1-notes-canva/Arithmetic Circuits.png" alt="img1"></p>
 ]]></content>
+      <categories>
+        <category>专业</category>
+      </categories>
       <tags>
         <tag>数字电路</tag>
       </tags>
@@ -63,8 +73,12 @@
 </ol>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/elias-sundqvist/obsidian-annotator/issues/356">Annotator not renderring properly #356 (github.com)</a><br><a href="https://github.com/electron/asar">@electron/asar - Electron Archive (github.com)</a></p>
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
       <tags>
-        <tag>工具</tag>
+        <tag>Obsidian</tag>
+        <tag>Electron</tag>
       </tags>
   </entry>
   <entry>
@@ -88,6 +102,9 @@
 </ol>
 <p><img src="/2023/12/16/WSL-reset-pwd/1702731844897.png" alt="1702731844897"></p>
 ]]></content>
+      <categories>
+        <category>专业</category>
+      </categories>
       <tags>
         <tag>Linux</tag>
       </tags>
@@ -106,6 +123,9 @@
 <li>拜亚动力 DT 770 Pro<br>极少数在英国这种洼地价格和国内差不多的东西，买来玩玩，效果意外的不错。</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>电子产品</category>
+      </categories>
       <tags>
         <tag>电子产品</tag>
       </tags>
@@ -113,8 +133,7 @@
   <entry>
     <title>INFR08025 Computational Logic Lecture Notes (Introduction to Computation) Fall 2023</title>
     <url>/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，这门课开设得比较奇怪，有点像是离散数学与算法导论。</p>
-<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，只能说这门课非常的 Edinburgh，推荐文献都是 Mathematics Method in Linguistics，Computational Logic 这一部分像是 Mathematical Logic 与一小部分 Finite Automata 结合，其中代码实现部分使用的是著名的函数式编程语言 Haskell。<br>Haskell 这门语言也十分的 Edinburgh，Edinburgh 的 <a href="https://en.wikipedia.org/wiki/Philip_Wadler?useskin=vector">Prof. Philip Wadler</a> 正是 Haskell 的主要设计者之一。虽然 Haskell 天天被车（连 bit 都定义不了，没有 loop 只能 recursion），但独特的函数式编程语法也委实能给不同编程水准的学生独特的程序设计思路，毕竟大名鼎鼎的 <a href="https://web.mit.edu/6.001/6.037/sicp.pdf">MIT6.001 Structure and Interpretation of Computer Programs</a> 使用的都是函数式编程语言 Lisp 作为 EECS 的第一节公共必修课（虽然已经是老黄历了，现在也用 Python 了）<br>正如<a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2023/">南京大学 PA</a> 讲义中所说：语言的语法是次要的，对编程思维的锻炼才是最重要的。<br><span id="more"></span><br>Notes based on the Lecture given by <a href="https://www.inf.ed.ac.uk/people/staff/Julian_Bradfield.html">Julian Bradfield</a></p>
 <h1 id="Logic-and-Binary-Data"><a href="#Logic-and-Binary-Data" class="headerlink" title="Logic and Binary Data"></a>Logic and Binary Data</h1><ul>
 <li>Logic - the language of reasoning</li>
 <li>Inofrmatics: the study of systems taht store, process and communicate information<ul>
@@ -764,12 +783,15 @@ M+_dM'=(Q\times Q', \Sigma,  \delta'', (q_0,q_0'),Q\times F' \cup F \times Q')</
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>专业</category>
+      </categories>
       <tags>
         <tag>本校</tag>
         <tag>计算机科学</tag>
-        <tag>数学-离散数学</tag>
-        <tag>逻辑学</tag>
-        <tag>Haskell</tag>
+        <tag>离散数学</tag>
+        <tag>数理逻辑</tag>
+        <tag>自动机</tag>
       </tags>
   </entry>
   <entry>
@@ -830,6 +852,9 @@ M+_dM'=(Q\times Q', \Sigma,  \delta'', (q_0,q_0'),Q\times F' \cup F \times Q')</
 <h2 id="Bad"><a href="#Bad" class="headerlink" title="Bad"></a>Bad</h2><p>5.5/10 Lost Castle 失落城堡</p>
 <p>4/10 Lumione 逐光之旅</p>
 ]]></content>
+      <categories>
+        <category>电子游戏</category>
+      </categories>
       <tags>
         <tag>电子游戏</tag>
       </tags>
@@ -971,6 +996,9 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
 <li>Engineering Application: vibration</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>专业</category>
+      </categories>
       <tags>
         <tag>数学</tag>
         <tag>Matlab</tag>
@@ -993,6 +1021,10 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
 </ul>
 <p>个人游戏时长：12.1 小时</p>
 ]]></content>
+      <categories>
+        <category>电子游戏</category>
+        <category>TPS</category>
+      </categories>
       <tags>
         <tag>电子游戏</tag>
       </tags>

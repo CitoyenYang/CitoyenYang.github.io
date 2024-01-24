@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2024-01-23T21:14:40.096Z</updated>
+  <updated>2024-01-24T17:37:22.696Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://citoyenyang.github.io/2024/01/23/Remnant2/"/>
     <id>https://citoyenyang.github.io/2024/01/23/Remnant2/</id>
     <published>2024-01-23T20:57:17.000Z</published>
-    <updated>2024-01-23T21:14:40.096Z</updated>
+    <updated>2024-01-24T17:37:22.696Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Remnant-2&quot;&gt;&lt;a href=&quot;#Remnant-2&quot; class=&quot;headerlink&quot; title=&quot;Remnant 2 &quot;&gt;&lt;/a&gt;&lt;em&gt;Remnant 2&lt;/em&gt; &lt;/h2&gt;&lt;center&gt; 发售时间：2023 年 6 月 21 日    评测时间：2024 年 1 月 23 日&lt;/center&gt;
@@ -32,6 +32,12 @@
     
     
     
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="TPS" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/TPS/"/>
+    
+    
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
@@ -40,12 +46,14 @@
     <link href="https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/"/>
     <id>https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/</id>
     <published>2023-12-31T06:57:19.000Z</published>
-    <updated>2023-12-31T07:02:02.008Z</updated>
+    <updated>2024-01-24T17:25:05.950Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.uk/Digital-Design-Computer-Architecture-RISC-V/dp/0128200642&quot;&gt;Digital Design and Computer Architecture, RISC-V Edition, Harris, Sarah &amp;amp; Harris, David (amazon.co.uk)&lt;/a&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
     
     
     <category term="数字电路" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
@@ -57,7 +65,7 @@
     <link href="https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/"/>
     <id>https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/</id>
     <published>2023-12-30T18:55:31.000Z</published>
-    <updated>2024-01-22T13:39:15.725Z</updated>
+    <updated>2024-01-24T17:29:32.529Z</updated>
     
     
     <summary type="html">&lt;p&gt;备注：本文默认用户&lt;/p&gt;
@@ -68,8 +76,12 @@
     
     
     
+    <category term="工具" scheme="https://citoyenyang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="工具" scheme="https://citoyenyang.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Obsidian" scheme="https://citoyenyang.github.io/tags/Obsidian/"/>
+    
+    <category term="Electron" scheme="https://citoyenyang.github.io/tags/Electron/"/>
     
   </entry>
   
@@ -78,7 +90,7 @@
     <link href="https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/"/>
     <id>https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/</id>
     <published>2023-12-16T12:49:48.000Z</published>
-    <updated>2023-12-16T13:08:23.355Z</updated>
+    <updated>2024-01-24T17:51:32.420Z</updated>
     
     
       
@@ -87,6 +99,8 @@
       
     
     
+    
+    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
     
     
     <category term="Linux" scheme="https://citoyenyang.github.io/tags/Linux/"/>
@@ -98,7 +112,7 @@
     <link href="https://citoyenyang.github.io/2023/12/05/Prod2023/"/>
     <id>https://citoyenyang.github.io/2023/12/05/Prod2023/</id>
     <published>2023-12-05T03:02:32.853Z</published>
-    <updated>2023-12-30T18:54:55.120Z</updated>
+    <updated>2024-01-24T17:29:55.784Z</updated>
     
     
       
@@ -107,6 +121,8 @@
       
     
     
+    
+    <category term="电子产品" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
     
     
     <category term="电子产品" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81/"/>
@@ -118,23 +134,25 @@
     <link href="https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/"/>
     <id>https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</id>
     <published>2023-11-28T10:14:24.000Z</published>
-    <updated>2023-11-28T10:45:15.938Z</updated>
+    <updated>2024-01-24T17:50:52.279Z</updated>
     
     
-    <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，这门课开设得比较奇怪，有点像是离散数学与算法导论。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，只能说这门课非常的 Edinburgh，推荐文献都是 Mathematics Method in Linguistics，Computational Logic 这一部分像是 Mathematical Logic 与一小部分 Finite Automata 结合，其中代码实现部分使用的是著名的函数式编程语言 Haskell。&lt;br&gt;Haskell 这门语言也十分的 Edinburgh，Edinburgh 的 &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Wadler?useskin=vector&quot;&gt;Prof. Philip Wadler&lt;/a&gt; 正是 Haskell 的主要设计者之一。虽然 Haskell 天天被车（连 bit 都定义不了，没有 loop 只能 recursion），但独特的函数式编程语法也委实能给不同编程水准的学生独特的程序设计思路，毕竟大名鼎鼎的 &lt;a href=&quot;https://web.mit.edu/6.001/6.037/sicp.pdf&quot;&gt;MIT6.001 Structure and Interpretation of Computer Programs&lt;/a&gt; 使用的都是函数式编程语言 Lisp 作为 EECS 的第一节公共必修课（虽然已经是老黄历了，现在也用 Python 了）&lt;br&gt;正如&lt;a href=&quot;https://nju-projectn.github.io/ics-pa-gitbook/ics2023/&quot;&gt;南京大学 PA&lt;/a&gt; 讲义中所说：语言的语法是次要的，对编程思维的锻炼才是最重要的。&lt;br&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
     
     
     <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
     
     <category term="计算机科学" scheme="https://citoyenyang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
     
-    <category term="数学-离散数学" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    <category term="离散数学" scheme="https://citoyenyang.github.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
     
-    <category term="逻辑学" scheme="https://citoyenyang.github.io/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/"/>
+    <category term="数理逻辑" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/"/>
     
-    <category term="Haskell" scheme="https://citoyenyang.github.io/tags/Haskell/"/>
+    <category term="自动机" scheme="https://citoyenyang.github.io/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
     
   </entry>
   
@@ -143,12 +161,14 @@
     <link href="https://citoyenyang.github.io/2023/11/18/vgr/"/>
     <id>https://citoyenyang.github.io/2023/11/18/vgr/</id>
     <published>2023-11-18T09:00:00.000Z</published>
-    <updated>2024-01-23T21:17:07.070Z</updated>
+    <updated>2024-01-24T17:51:23.837Z</updated>
     
     
     <summary type="html">&lt;p&gt;个人电子游戏评测汇总&lt;br&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
     
     
     <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
@@ -160,12 +180,14 @@
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2023-11-28T11:01:04.206Z</updated>
+    <updated>2024-01-24T17:18:18.056Z</updated>
     
     
     <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>
     
     
+    
+    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
     
     
     <category term="数学" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
@@ -181,7 +203,7 @@
     <link href="https://citoyenyang.github.io/2023/11/02/Remnant/"/>
     <id>https://citoyenyang.github.io/2023/11/02/Remnant/</id>
     <published>2023-11-02T15:06:35.000Z</published>
-    <updated>2023-11-06T14:54:09.336Z</updated>
+    <updated>2024-01-24T17:37:21.631Z</updated>
     
     
       
@@ -190,6 +212,10 @@
       
     
     
+    
+    <category term="电子游戏" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="TPS" scheme="https://citoyenyang.github.io/categories/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/TPS/"/>
     
     
     <category term="电子游戏" scheme="https://citoyenyang.github.io/tags/%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F/"/>
