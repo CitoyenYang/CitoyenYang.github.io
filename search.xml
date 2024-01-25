@@ -135,8 +135,8 @@ n\ln\left( 1+\frac{1}{n} \right) &= \frac{1}{\Delta x} \ln(1+\Delta x) \\
         <category>工具</category>
       </categories>
       <tags>
-        <tag>Obsidian</tag>
         <tag>Electron</tag>
+        <tag>Obsidian</tag>
       </tags>
   </entry>
   <entry>
@@ -846,10 +846,10 @@ M+_dM'=(Q\times Q', \Sigma,  \delta'', (q_0,q_0'),Q\times F' \cup F \times Q')</
       </categories>
       <tags>
         <tag>本校</tag>
-        <tag>计算机科学</tag>
         <tag>离散数学</tag>
         <tag>数理逻辑</tag>
         <tag>自动机</tag>
+        <tag>计算机科学</tag>
       </tags>
   </entry>
   <entry>
@@ -1058,9 +1058,9 @@ R_{3D}=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\e
         <category>数理基础</category>
       </categories>
       <tags>
+        <tag>数学建模</tag>
         <tag>Matlab</tag>
         <tag>本校</tag>
-        <tag>数学建模</tag>
       </tags>
   </entry>
   <entry>

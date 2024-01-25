@@ -100,9 +100,9 @@
     <category term="工具" scheme="https://citoyenyang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="Obsidian" scheme="https://citoyenyang.github.io/tags/Obsidian/"/>
-    
     <category term="Electron" scheme="https://citoyenyang.github.io/tags/Electron/"/>
+    
+    <category term="Obsidian" scheme="https://citoyenyang.github.io/tags/Obsidian/"/>
     
   </entry>
   
@@ -167,13 +167,13 @@
     
     <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
     
-    <category term="计算机科学" scheme="https://citoyenyang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
     <category term="离散数学" scheme="https://citoyenyang.github.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
     
     <category term="数理逻辑" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/"/>
     
     <category term="自动机" scheme="https://citoyenyang.github.io/tags/%E8%87%AA%E5%8A%A8%E6%9C%BA/"/>
+    
+    <category term="计算机科学" scheme="https://citoyenyang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
     
   </entry>
   
@@ -211,11 +211,11 @@
     <category term="数理基础" scheme="https://citoyenyang.github.io/categories/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
     
+    <category term="数学建模" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
     <category term="Matlab" scheme="https://citoyenyang.github.io/tags/Matlab/"/>
     
     <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
-    
-    <category term="数学建模" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
