@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2024-01-24T17:37:22.696Z</updated>
+  <updated>2024-01-25T17:56:10.437Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>幂函数的导数证明</title>
+    <link href="https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/"/>
+    <id>https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/</id>
+    <published>2024-01-25T17:41:49.000Z</published>
+    <updated>2024-01-25T17:56:10.437Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Basic theorem&lt;/em&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+&#92;frac{&#92;text{d}}{&#92;text{d}x} a^x = &#92;ln(a) a^x&lt;/script&gt;</summary>
+    
+    
+    
+    <category term="数理基础" scheme="https://citoyenyang.github.io/categories/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="微积分" scheme="https://citoyenyang.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>简评《遗迹 2》- 多人射击与类魂的悖论</title>
@@ -46,14 +67,14 @@
     <link href="https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/"/>
     <id>https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/</id>
     <published>2023-12-31T06:57:19.000Z</published>
-    <updated>2024-01-24T17:25:05.950Z</updated>
+    <updated>2024-01-25T17:51:31.246Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.uk/Digital-Design-Computer-Architecture-RISC-V/dp/0128200642&quot;&gt;Digital Design and Computer Architecture, RISC-V Edition, Harris, Sarah &amp;amp; Harris, David (amazon.co.uk)&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
+    <category term="弱电" scheme="https://citoyenyang.github.io/categories/%E5%BC%B1%E7%94%B5/"/>
     
     
     <category term="数字电路" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
@@ -90,7 +111,7 @@
     <link href="https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/"/>
     <id>https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/</id>
     <published>2023-12-16T12:49:48.000Z</published>
-    <updated>2024-01-24T17:51:32.420Z</updated>
+    <updated>2024-01-25T17:51:13.104Z</updated>
     
     
       
@@ -100,7 +121,7 @@
     
     
     
-    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
+    <category term="计算机科学" scheme="https://citoyenyang.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
     
     
     <category term="Linux" scheme="https://citoyenyang.github.io/tags/Linux/"/>
@@ -134,14 +155,14 @@
     <link href="https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/"/>
     <id>https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</id>
     <published>2023-11-28T10:14:24.000Z</published>
-    <updated>2024-01-24T17:50:52.279Z</updated>
+    <updated>2024-01-25T17:51:59.975Z</updated>
     
     
     <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，只能说这门课非常的 Edinburgh，推荐文献都是 Mathematics Method in Linguistics，Computational Logic 这一部分像是 Mathematical Logic 与一小部分 Finite Automata 结合，其中代码实现部分使用的是著名的函数式编程语言 Haskell。&lt;br&gt;Haskell 这门语言也十分的 Edinburgh，Edinburgh 的 &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Wadler?useskin=vector&quot;&gt;Prof. Philip Wadler&lt;/a&gt; 正是 Haskell 的主要设计者之一。虽然 Haskell 天天被车（连 bit 都定义不了，没有 loop 只能 recursion），但独特的函数式编程语法也委实能给不同编程水准的学生独特的程序设计思路，毕竟大名鼎鼎的 &lt;a href=&quot;https://web.mit.edu/6.001/6.037/sicp.pdf&quot;&gt;MIT6.001 Structure and Interpretation of Computer Programs&lt;/a&gt; 使用的都是函数式编程语言 Lisp 作为 EECS 的第一节公共必修课（虽然已经是老黄历了，现在也用 Python 了）&lt;br&gt;正如&lt;a href=&quot;https://nju-projectn.github.io/ics-pa-gitbook/ics2023/&quot;&gt;南京大学 PA&lt;/a&gt; 讲义中所说：语言的语法是次要的，对编程思维的锻炼才是最重要的。&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
-    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
+    <category term="计算机科学" scheme="https://citoyenyang.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
     
     
     <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
@@ -180,21 +201,21 @@
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2024-01-24T17:18:18.056Z</updated>
+    <updated>2024-01-25T17:51:45.650Z</updated>
     
     
     <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>
     
     
     
-    <category term="专业" scheme="https://citoyenyang.github.io/categories/%E4%B8%93%E4%B8%9A/"/>
+    <category term="数理基础" scheme="https://citoyenyang.github.io/categories/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/"/>
     
-    
-    <category term="数学" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
     <category term="Matlab" scheme="https://citoyenyang.github.io/tags/Matlab/"/>
     
     <category term="本校" scheme="https://citoyenyang.github.io/tags/%E6%9C%AC%E6%A0%A1/"/>
+    
+    <category term="数学建模" scheme="https://citoyenyang.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
