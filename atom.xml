@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2024-01-25T17:56:10.437Z</updated>
+  <updated>2024-02-02T20:43:12.171Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【持续更新】命令行使用笔记</title>
+    <link href="https://citoyenyang.github.io/2024/02/02/cli-notes/"/>
+    <id>https://citoyenyang.github.io/2024/02/02/cli-notes/</id>
+    <published>2024-02-02T20:38:26.000Z</published>
+    <updated>2024-02-02T20:43:12.171Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;更新于 2024 年 2 月 2 日：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://citoyenyang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="https://citoyenyang.github.io/tags/Linux/"/>
+    
+    <category term="Windows" scheme="https://citoyenyang.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【持续更新】VIM 使用笔记</title>
+    <link href="https://citoyenyang.github.io/2024/02/02/vim-notes/"/>
+    <id>https://citoyenyang.github.io/2024/02/02/vim-notes/</id>
+    <published>2024-02-02T20:38:26.000Z</published>
+    <updated>2024-02-02T20:44:48.459Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;更新于 2024 年 2 月 2 日：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://citoyenyang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="VIM" scheme="https://citoyenyang.github.io/tags/VIM/"/>
+    
+  </entry>
   
   <entry>
     <title>幂函数的导数证明</title>
@@ -133,7 +173,7 @@
     <link href="https://citoyenyang.github.io/2023/12/05/Prod2023/"/>
     <id>https://citoyenyang.github.io/2023/12/05/Prod2023/</id>
     <published>2023-12-05T03:02:32.853Z</published>
-    <updated>2024-01-24T17:29:55.784Z</updated>
+    <updated>2024-01-26T19:28:19.384Z</updated>
     
     
       

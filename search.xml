@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【持续更新】命令行使用笔记</title>
+    <url>/2024/02/02/cli-notes/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 2 日：</p>
+<span id="more"></span>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><p>在 <em>Windows Powershell</em> 中，<code>clear-host</code> 或 <code>cls</code> 可用于清除 Terminal 中的显示的内容。<br><code>ctrl-l</code>，这是一个可以在大多数 <em>Unix-Based CLI</em> 与 <em>Powershell</em> 中都可用的清屏命令，与上文提到的 <code>cls</code> 和 Unix-Based 的 <code>clear</code> 不同的是，<code>ctrl-l</code> 在大多数情况下只是使得前文不可见，并非真正” 清除 “了屏幕上的内容。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【持续更新】VIM 使用笔记</title>
+    <url>/2024/02/02/vim-notes/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 2 日：</p>
+<span id="more"></span>
+<h3 id="删除一个单词"><a href="#删除一个单词" class="headerlink" title="删除一个单词"></a>删除一个单词</h3><ul>
+<li><code>dw</code> 删除当前词中光标后面的字母</li>
+<li><code>db</code> 删除当前词中光标前面的字母</li>
+<li><code>daw</code> 删除当前词</li>
+<li><code>bdw</code> 删除当前词</li>
+</ul>
+<p>若使用删除后插入，则将 <code>d</code> 改为 <code>c</code><del>（废话）</del></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>VIM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>幂函数的导数证明</title>
     <url>/2024/01/25/pf-ddx-pwr-fx/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong><em>Basic theorem</em></strong>:</p>
@@ -175,7 +210,7 @@ n\ln\left( 1+\frac{1}{n} \right) &= \frac{1}{\Delta x} \ln(1+\Delta x) \\
 <li>三星 Galaxy S23 Ultra (港)<br>近几年玩过最喜欢的手机，好久没用过续航这么长的机器了，上一部还是 Mate 30。唯二的缺点是 nfc 很不灵敏和最 cjb 的康宁大猩猩玻璃，后悔没贴膜。</li>
 <li>三星 Galaxy Watch 6 Classic (港)</li>
 <li>BOSE QC45<br>降噪 nb，麦克风垃圾，音质远大于 1000XM4，如果没有打电话需求就是最顶的便捷降噪耳机。</li>
-<li>雷蛇黑寡妇 v3 mini<br>老键盘保修期退款置换的，配列的限制导致可 remap 的键太少了，这点我非常不喜欢，配列的限制也是我买 Surface 人体工学键盘的原因之一，还有就是光速退格双击，等回国保修了</li>
+<li>雷蛇黑寡妇 v3 mini<br>老键盘保修期退款置换的，配列的限制导致可 remap 的键太少了</li>
 <li>微软折叠键盘<br>很符合我对微软硬件品控的想象，半年出问题。</li>
 <li>LG 27UK850<br>在英国这种数码产品洼地能买到这种显示器已经是万幸了，没什么缺点的东西。</li>
 <li>拜亚动力 DT 770 Pro<br>极少数在英国这种洼地价格和国内差不多的东西，买来玩玩，效果意外的不错。</li>
