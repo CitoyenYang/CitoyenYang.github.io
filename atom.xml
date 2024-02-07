@@ -42,7 +42,7 @@
     <link href="https://citoyenyang.github.io/2024/02/02/vim-notes/"/>
     <id>https://citoyenyang.github.io/2024/02/02/vim-notes/</id>
     <published>2024-02-02T20:38:26.000Z</published>
-    <updated>2024-02-02T20:44:48.459Z</updated>
+    <updated>2024-02-07T01:55:43.684Z</updated>
     
     
     <summary type="html">&lt;p&gt;更新于 2024 年 2 月 2 日：&lt;/p&gt;</summary>
@@ -61,7 +61,7 @@
     <link href="https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/"/>
     <id>https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/</id>
     <published>2024-01-25T17:41:49.000Z</published>
-    <updated>2024-01-25T17:56:10.437Z</updated>
+    <updated>2024-02-07T01:55:01.539Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Basic theorem&lt;/em&gt;&lt;/strong&gt;:&lt;/p&gt;
@@ -82,10 +82,10 @@
     <link href="https://citoyenyang.github.io/2024/01/23/Remnant2/"/>
     <id>https://citoyenyang.github.io/2024/01/23/Remnant2/</id>
     <published>2024-01-23T20:57:17.000Z</published>
-    <updated>2024-01-24T17:37:22.696Z</updated>
+    <updated>2024-02-07T01:55:40.120Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;Remnant-2&quot;&gt;&lt;a href=&quot;#Remnant-2&quot; class=&quot;headerlink&quot; title=&quot;Remnant 2 &quot;&gt;&lt;/a&gt;&lt;em&gt;Remnant 2&lt;/em&gt; &lt;/h2&gt;&lt;center&gt; 发售时间：2023 年 6 月 21 日    评测时间：2024 年 1 月 23 日&lt;/center&gt;
+    <summary type="html">&lt;h2 id=&quot;Remnant-2&quot;&gt;&lt;a href=&quot;#Remnant-2&quot; class=&quot;headerlink&quot; title=&quot;Remnant 2&quot;&gt;&lt;/a&gt;&lt;em&gt;Remnant 2&lt;/em&gt;&lt;/h2&gt;&lt;center&gt;发售时间：2023 年 6 月 21 日    评测时间：2024 年 1 月 23 日&lt;/center&gt;
 &lt;center&gt;评测平台：XBOXPC    通关用时：15 小时&lt;/center&gt;
 
 &lt;hr&gt;
@@ -107,7 +107,7 @@
     <link href="https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/"/>
     <id>https://citoyenyang.github.io/2023/12/31/DDCA-ch5-1-notes-canva/</id>
     <published>2023-12-31T06:57:19.000Z</published>
-    <updated>2024-01-25T17:51:31.246Z</updated>
+    <updated>2024-02-07T01:53:30.505Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.uk/Digital-Design-Computer-Architecture-RISC-V/dp/0128200642&quot;&gt;Digital Design and Computer Architecture, RISC-V Edition, Harris, Sarah &amp;amp; Harris, David (amazon.co.uk)&lt;/a&gt;&lt;/p&gt;</summary>
@@ -126,7 +126,7 @@
     <link href="https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/"/>
     <id>https://citoyenyang.github.io/2023/12/30/Fix-Annotator-Ob1-5/</id>
     <published>2023-12-30T18:55:31.000Z</published>
-    <updated>2024-01-24T17:29:32.529Z</updated>
+    <updated>2024-02-07T01:54:25.663Z</updated>
     
     
     <summary type="html">&lt;p&gt;备注：本文默认用户&lt;/p&gt;
@@ -151,7 +151,7 @@
     <link href="https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/"/>
     <id>https://citoyenyang.github.io/2023/12/16/WSL-reset-pwd/</id>
     <published>2023-12-16T12:49:48.000Z</published>
-    <updated>2024-01-25T17:51:13.104Z</updated>
+    <updated>2024-02-07T01:55:46.342Z</updated>
     
     
       
@@ -195,10 +195,10 @@
     <link href="https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/"/>
     <id>https://citoyenyang.github.io/2023/11/28/INFR08025-I2C-CL-Lecture-Notes/</id>
     <published>2023-11-28T10:14:24.000Z</published>
-    <updated>2024-01-25T17:51:59.975Z</updated>
+    <updated>2024-02-07T01:50:44.828Z</updated>
     
     
-    <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，只能说这门课非常的 Edinburgh，推荐文献都是 Mathematics Method in Linguistics，Computational Logic 这一部分像是 Mathematical Logic 与一小部分 Finite Automata 结合，其中代码实现部分使用的是著名的函数式编程语言 Haskell。&lt;br&gt;Haskell 这门语言也十分的 Edinburgh，Edinburgh 的 &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Wadler?useskin=vector&quot;&gt;Prof. Philip Wadler&lt;/a&gt; 正是 Haskell 的主要设计者之一。虽然 Haskell 天天被车（连 bit 都定义不了，没有 loop 只能 recursion），但独特的函数式编程语法也委实能给不同编程水准的学生独特的程序设计思路，毕竟大名鼎鼎的 &lt;a href=&quot;https://web.mit.edu/6.001/6.037/sicp.pdf&quot;&gt;MIT6.001 Structure and Interpretation of Computer Programs&lt;/a&gt; 使用的都是函数式编程语言 Lisp 作为 EECS 的第一节公共必修课（虽然已经是老黄历了，现在也用 Python 了）&lt;br&gt;正如&lt;a href=&quot;https://nju-projectn.github.io/ics-pa-gitbook/ics2023/&quot;&gt;南京大学 PA&lt;/a&gt; 讲义中所说：语言的语法是次要的，对编程思维的锻炼才是最重要的。&lt;br&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;INFR08025 Introduction to Computation 的 Computational Logic 部分的笔记，只能说这门课非常的 Edinburgh，推荐文献都是 Mathematics Method in Linguistics，Computational Logic 这一部分像是 Mathematical Logic 与一小部分 Finite Automata 结合，其中代码实现部分使用的是著名的函数式编程语言 Haskell。&lt;br&gt;Haskell 这门语言也十分的 Edinburgh，Edinburgh 的 &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Wadler?useskin=vector&quot;&gt;Prof. Philip Wadler&lt;/a&gt; 正是 Haskell 的主要设计者之一。虽然 Haskell 天天被车，但独特的函数式编程语法也委实能给不同编程水准的学生独特的程序设计思路，总的来说，函数式语言（特别是 Haskell 作为纯函数式语言）高度简练，高度抽象，对于编程思维的锻炼还是比较有价值的。&lt;br&gt;&lt;/p&gt;</summary>
     
     
     
@@ -222,7 +222,7 @@
     <link href="https://citoyenyang.github.io/2023/11/18/vgr/"/>
     <id>https://citoyenyang.github.io/2023/11/18/vgr/</id>
     <published>2023-11-18T09:00:00.000Z</published>
-    <updated>2024-01-24T17:51:23.837Z</updated>
+    <updated>2024-02-07T01:55:41.144Z</updated>
     
     
     <summary type="html">&lt;p&gt;个人电子游戏评测汇总&lt;br&gt;&lt;/p&gt;</summary>
@@ -241,7 +241,7 @@
     <link href="https://citoyenyang.github.io/2023/11/06/08074Matlab/"/>
     <id>https://citoyenyang.github.io/2023/11/06/08074Matlab/</id>
     <published>2023-11-06T11:57:03.000Z</published>
-    <updated>2024-01-25T17:51:45.650Z</updated>
+    <updated>2024-02-07T01:53:31.092Z</updated>
     
     
     <summary type="html">&lt;p&gt;这门课是你校大一上工程数学打包送的，本来以为会和其他学校一样上来就讲建模，没想到讲了六个周 &lt;code&gt;doc&lt;/code&gt; 命令就能解决的东西…… 发上来纯图一乐了。&lt;br&gt;有一节工程建模课，但不好做成笔记发上来。&lt;br&gt;个人学时：5 小时&lt;/p&gt;</summary>
@@ -264,7 +264,7 @@
     <link href="https://citoyenyang.github.io/2023/11/02/Remnant/"/>
     <id>https://citoyenyang.github.io/2023/11/02/Remnant/</id>
     <published>2023-11-02T15:06:35.000Z</published>
-    <updated>2024-01-24T17:37:21.631Z</updated>
+    <updated>2024-02-07T01:55:39.692Z</updated>
     
     
       
