@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"citoyenyang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="基本信息课程名：Structure and Interpretation of Computer Programs (abbr. SICP)中文名：计算机程序的构造与解释工具：Python, Scheme, SQL课号：CS61A学校：University of California, Berkeley教授：John DeNero课程官网：CS61A Summer 2020课本：Composing">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UC Berkeley CS61A 学习经验">
+<meta property="og:url" content="https://citoyenyang.github.io/2024/02/22/UCB_CS61A_Review/index.html">
+<meta property="og:site_name" content="Citoyen">
+<meta property="og:description" content="基本信息课程名：Structure and Interpretation of Computer Programs (abbr. SICP)中文名：计算机程序的构造与解释工具：Python, Scheme, SQL课号：CS61A学校：University of California, Berkeley教授：John DeNero课程官网：CS61A Summer 2020课本：Composing">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://citoyenyang.github.io/2024/02/22/UCB_CS61A_Review/fig_61a_recursive_list_change.png">
+<meta property="article:published_time" content="2024-02-22T15:22:00.000Z">
+<meta property="article:modified_time" content="2024-02-22T15:25:27.948Z">
+<meta property="article:author" content="Citoyen Yang">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="SQL">
+<meta property="article:tag" content="Scheme">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://citoyenyang.github.io/2024/02/22/UCB_CS61A_Review/fig_61a_recursive_list_change.png">
+
+<link rel="canonical" href="https://citoyenyang.github.io/2024/02/22/UCB_CS61A_Review/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>UC Berkeley CS61A 学习经验 | Citoyen</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Citoyen" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Citoyen</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">BEng Full Stack Engineering @ Wild Chicken University</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://citoyenyang.github.io/2024/02/22/UCB_CS61A_Review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Citoyen Yang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Citoyen">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          UC Berkeley CS61A 学习经验
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-02-22 15:22:00 / 修改时间：15:25:27" itemprop="dateCreated datePublished" datetime="2024-02-22T15:22:00+00:00">2024-02-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">计算机科学</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p>课程名：Structure and Interpretation of Computer Programs (abbr. SICP)<br>中文名：计算机程序的构造与解释<br>工具：Python, Scheme, SQL<br>课号：CS61A<br>学校：University of California, Berkeley<br>教授：John DeNero<br>课程官网：<a target="_blank" rel="noopener" href="https://inst.eecs.berkeley.edu/~cs61a/su20/">CS61A Summer 2020</a><br>课本：<a target="_blank" rel="noopener" href="https://www.composingprograms.com">Composing Programs (SICP for Python)</a><br>视频：YouTube，可在<a target="_blank" rel="noopener" href="https://inst.eecs.berkeley.edu/~cs61a/su20/">课程官网</a>中找到<br>课堂视频：YouTube，已失效<br>课件：PDF 源文件，可在<a target="_blank" rel="noopener" href="https://inst.eecs.berkeley.edu/~cs61a/su20/">课程官网</a>中找到<br>练习：提供 Lab, Discussions, Homework, Project , 且除了 Discussions 外都可自动评分<br>试题：试题与答案均提供  </p>
+<span id="more"></span>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>在 Windows 下，使用 <code>ctrl-z</code> 然后 <code>Enter</code> 结束终端中的 Python 解释器。  </p>
+<p>官网中的课本链接已修改，如要直接在官网中使用，则需要在 <code>composingprograms</code> 前加 <code>www.</code>  </p>
+<h2 id="介绍与个人感想"><a href="#介绍与个人感想" class="headerlink" title="介绍与个人感想"></a>介绍与个人感想</h2><p>这门课是 UC Berkeley EECS 的<strong>编程</strong>入门课，主要使用 Python 语言，也介绍了 Scheme 与 SQL，我想意在将 Python 与函数式与描述式的语言作比较，同时也以此介绍了编程范式与数据库。  </p>
+<p>这门课由于改编于 MIT 基于 Scheme 的 SICP，其中 Python 语言的思维也十分函数式，绝大多数讲义与作业都是在写函数，并用交互式环境进行互动。且正如标题所言，这门课对 Python 语言的刨析很深，讲了很多所谓的 Evaluation Rule 与其他很多自己瞎学中较少关注到的信息（学了这门课之后我总算明白为什么教人编程时别人都会犯那么多奇奇怪怪的错，其实就是这些可能犯的错被我们编程的 “经验主义” 所解决了），出于反对经验主义的目的，这门课也是非常值得学习的。  </p>
+<p>作为一个懒狗与暂时的速通需求，我并没有做 Discussions 和 Exam （要画太多 Environment Diagram 了），除了 Scheme Interpreter 外也暂时并没有做 Projects （不急）</p>
+<p>Scheme Interpreter 这个 Project 我认为是整门课最精华的 Project，因为这是既从上而下又从下而上地解释这门课的标题”Structure and Interpretation”，同时也引入了一些编译原理的概念，我认为就算是对于速通来说也是必做的。</p>
+<h2 id="一些笔记"><a href="#一些笔记" class="headerlink" title="一些笔记"></a>一些笔记</h2><h3 id="Doctest"><a href="#Doctest" class="headerlink" title="Doctest"></a>Doctest</h3><ul>
+<li>嵌入到源码中 / 独立文件<ul>
+<li>源码中可存放的位置：模块最开头 / 函数声明语句的下一行</li>
+</ul>
+</li>
+<li>执行：<code>python3 -m doctest (-v) filename.py</code><ul>
+<li>其中可选的 <code>-v</code> 为 <code>verbose=True</code>，即显示详细 <code>doctest</code> 过程</li>
+</ul>
+</li>
+</ul>
+<h3 id="自调用"><a href="#自调用" class="headerlink" title="自调用"></a>自调用</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_all</span>(<span class="params">x</span>):</span><br><span class="line">&nbsp;<span class="built_in">print</span>(x)</span><br><span class="line">&nbsp;<span class="keyword">return</span> print_all</span><br><span class="line"></span><br><span class="line">print_all(<span class="number">1</span>)(<span class="number">3</span>)(<span class="number">5</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>Will output</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></tbody></table></figure>
+<p>Since this is a self-reference process.<br>More complex code:</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_sums</span>(<span class="params">x</span>):</span><br><span class="line">&nbsp;<span class="built_in">print</span>(x)</span><br><span class="line">&nbsp;<span class="keyword">def</span> <span class="title function_">next_sum</span>(<span class="params">y</span>):</span><br><span class="line">&nbsp; <span class="keyword">return</span> print_sums(x+y)</span><br><span class="line">&nbsp;<span class="keyword">return</span> next_sum</span><br><span class="line"></span><br><span class="line">print_sums(<span class="number">1</span>)(<span class="number">3</span>)(<span class="number">5</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>Will output</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Nonlocal"><a href="#Nonlocal" class="headerlink" title="Nonlocal"></a>Nonlocal</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">make_fib</span>():</span><br><span class="line">    fa = <span class="number">0</span></span><br><span class="line">    fb = <span class="number">1</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fibpp</span>():</span><br><span class="line">        <span class="keyword">nonlocal</span> fa, fb</span><br><span class="line">        fb = fa + fb</span><br><span class="line">        fa, fb = fb, fa</span><br><span class="line">        <span class="keyword">return</span> fb</span><br><span class="line">    <span class="keyword">return</span> fibpp</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h3><ul>
+<li>Immutable, or cannot change its value after created  </li>
+<li>Single tuple: <code>2,</code>  </li>
+<li>No need to put parenthesis</li>
+</ul>
+<h3 id="yield-and-yield-from"><a href="#yield-and-yield-from" class="headerlink" title="yield and `yield from"></a><code>yield</code> and `yield from</h3><p><code>yield from &lt;expression&gt;</code> can be considered as <code>iter(&lt;expression&gt;)</code></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">prefixes</span>(<span class="params">s</span>):</span><br><span class="line">    <span class="string">"""Yield all prefixes of s.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; list(prefixes('both'))</span></span><br><span class="line"><span class="string">    ['b', 'bo', 'bot', 'both']</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> s:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> prefixes(s[:-<span class="number">1</span>])</span><br><span class="line">        <span class="keyword">yield</span> s</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Memoisation"><a href="#Memoisation" class="headerlink" title="Memoisation"></a>Memoisation</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">memo</span>(<span class="params">f</span>): <span class="comment"># Memoization</span></span><br><span class="line">  cache = {}</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">memoized</span>(<span class="params">n</span>): <span class="comment"># Keys are arguments that map to return value</span></span><br><span class="line">    <span class="keyword">if</span> n <span class="keyword">not</span> <span class="keyword">in</span> cache:</span><br><span class="line">      cache[n] = f(n)</span><br><span class="line">    <span class="keyword">return</span> memoized <span class="comment"># Same behaviour as f if f is a pure function</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Looped-Linked-List"><a href="#Looped-Linked-List" class="headerlink" title="Looped Linked List"></a>Looped Linked List</h3><p><img src="/2024/02/22/UCB_CS61A_Review/fig_61a_recursive_list_change.png" alt="Looped Linked List"></p>
+<h3 id="Symbolic-Programming"><a href="#Symbolic-Programming" class="headerlink" title="Symbolic Programming"></a>Symbolic Programming</h3><p>类似 Matlab 中的 <code>syms</code>，用于科学计算，但 61A 中并没有多提</p>
+<figure class="highlight scheme"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">scm&gt; (<span class="name"><span class="built_in">define</span></span> a <span class="number">1</span>)</span><br><span class="line">a</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">define</span></span> b <span class="number">2</span>)</span><br><span class="line">b</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">list</span></span> a b)</span><br><span class="line">(<span class="name">1</span> <span class="number">2</span>)</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">list</span></span> <span class="symbol">'a</span> <span class="symbol">'b</span>)</span><br><span class="line">(<span class="name">a</span> b)</span><br><span class="line">scm&gt; <span class="symbol">'a</span></span><br><span class="line">a</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">quote</span></span> a)</span><br><span class="line">a</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Parsing"><a href="#Parsing" class="headerlink" title="Parsing"></a>Parsing</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  Text --Lexical Analysis--&gt; Tokens --Syntactic Analysis--&gt; Expression</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Tail-Recursion"><a href="#Tail-Recursion" class="headerlink" title="Tail Recursion"></a>Tail Recursion</h3><ol>
+<li>The last body sub-expression in a lambda expression  </li>
+<li>Sub-expressions 2 &amp; 3 in a tail context <code>if</code> expression</li>
+</ol>
+<p>Referential Transparency:  </p>
+<blockquote>
+<p>引用透明性：一个表达式在给定程序中是引用透明的，如果对于任何表达式，所有的实例都可以被其计算结果所替代，而不改变程序的行为。这意味着，如果一个函数对于相同的输入总是产生相同的结果，并且在执行过程中不产生任何可观察的副作用（如修改全局变量、进行 I/O 操作等），那么这个函数就是引用透明的。</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/SQL/" rel="tag"># SQL</a>
+              <a href="/tags/Scheme/" rel="tag"># Scheme</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/02/11/cli-notes/" rel="prev" title="【持续更新】命令行使用笔记">
+      <i class="fa fa-chevron-left"></i> 【持续更新】命令行使用笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-number">2.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3"><span class="nav-number">3.</span> <span class="nav-text">介绍与个人感想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E7%AC%94%E8%AE%B0"><span class="nav-number">4.</span> <span class="nav-text">一些笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Doctest"><span class="nav-number">4.1.</span> <span class="nav-text">Doctest</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E8%B0%83%E7%94%A8"><span class="nav-number">4.2.</span> <span class="nav-text">自调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nonlocal"><span class="nav-number">4.3.</span> <span class="nav-text">Nonlocal</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tuple"><span class="nav-number">4.4.</span> <span class="nav-text">Tuple</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yield-and-yield-from"><span class="nav-number">4.5.</span> <span class="nav-text">yield and &#96;yield from</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Memoisation"><span class="nav-number">4.6.</span> <span class="nav-text">Memoisation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Looped-Linked-List"><span class="nav-number">4.7.</span> <span class="nav-text">Looped Linked List</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Symbolic-Programming"><span class="nav-number">4.8.</span> <span class="nav-text">Symbolic Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Parsing"><span class="nav-number">4.9.</span> <span class="nav-text">Parsing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tail-Recursion"><span class="nav-number">4.10.</span> <span class="nav-text">Tail Recursion</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Citoyen Yang"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Citoyen Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CitoyenYang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CitoyenYang" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:citoyen_yang@outlook.com" title="E-Mail → mailto:citoyen_yang@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
+      </div>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Citoyen Yang</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">37k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:08</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+<!-- calendar widget -->
+
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+</body>
+</html>

@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>UC Berkeley CS61A 学习经验</title>
+    <url>/2024/02/22/UCB_CS61A_Review/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><p>课程名：Structure and Interpretation of Computer Programs (abbr. SICP)<br>中文名：计算机程序的构造与解释<br>工具：Python, Scheme, SQL<br>课号：CS61A<br>学校：University of California, Berkeley<br>教授：John DeNero<br>课程官网：<a href="https://inst.eecs.berkeley.edu/~cs61a/su20/">CS61A Summer 2020</a><br>课本：<a href="https://www.composingprograms.com">Composing Programs (SICP for Python)</a><br>视频：YouTube，可在<a href="https://inst.eecs.berkeley.edu/~cs61a/su20/">课程官网</a>中找到<br>课堂视频：YouTube，已失效<br>课件：PDF 源文件，可在<a href="https://inst.eecs.berkeley.edu/~cs61a/su20/">课程官网</a>中找到<br>练习：提供 Lab, Discussions, Homework, Project , 且除了 Discussions 外都可自动评分<br>试题：试题与答案均提供  </p>
+<span id="more"></span>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>在 Windows 下，使用 <code>ctrl-z</code> 然后 <code>Enter</code> 结束终端中的 Python 解释器。  </p>
+<p>官网中的课本链接已修改，如要直接在官网中使用，则需要在 <code>composingprograms</code> 前加 <code>www.</code>  </p>
+<h2 id="介绍与个人感想"><a href="#介绍与个人感想" class="headerlink" title="介绍与个人感想"></a>介绍与个人感想</h2><p>这门课是 UC Berkeley EECS 的<strong>编程</strong>入门课，主要使用 Python 语言，也介绍了 Scheme 与 SQL，我想意在将 Python 与函数式与描述式的语言作比较，同时也以此介绍了编程范式与数据库。  </p>
+<p>这门课由于改编于 MIT 基于 Scheme 的 SICP，其中 Python 语言的思维也十分函数式，绝大多数讲义与作业都是在写函数，并用交互式环境进行互动。且正如标题所言，这门课对 Python 语言的刨析很深，讲了很多所谓的 Evaluation Rule 与其他很多自己瞎学中较少关注到的信息（学了这门课之后我总算明白为什么教人编程时别人都会犯那么多奇奇怪怪的错，其实就是这些可能犯的错被我们编程的 “经验主义” 所解决了），出于反对经验主义的目的，这门课也是非常值得学习的。  </p>
+<p>作为一个懒狗与暂时的速通需求，我并没有做 Discussions 和 Exam （要画太多 Environment Diagram 了），除了 Scheme Interpreter 外也暂时并没有做 Projects （不急）</p>
+<p>Scheme Interpreter 这个 Project 我认为是整门课最精华的 Project，因为这是既从上而下又从下而上地解释这门课的标题”Structure and Interpretation”，同时也引入了一些编译原理的概念，我认为就算是对于速通来说也是必做的。</p>
+<h2 id="一些笔记"><a href="#一些笔记" class="headerlink" title="一些笔记"></a>一些笔记</h2><h3 id="Doctest"><a href="#Doctest" class="headerlink" title="Doctest"></a>Doctest</h3><ul>
+<li>嵌入到源码中 / 独立文件<ul>
+<li>源码中可存放的位置：模块最开头 / 函数声明语句的下一行</li>
+</ul>
+</li>
+<li>执行：<code>python3 -m doctest (-v) filename.py</code><ul>
+<li>其中可选的 <code>-v</code> 为 <code>verbose=True</code>，即显示详细 <code>doctest</code> 过程</li>
+</ul>
+</li>
+</ul>
+<h3 id="自调用"><a href="#自调用" class="headerlink" title="自调用"></a>自调用</h3><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_all</span>(<span class="params">x</span>):</span><br><span class="line">&nbsp;<span class="built_in">print</span>(x)</span><br><span class="line">&nbsp;<span class="keyword">return</span> print_all</span><br><span class="line"></span><br><span class="line">print_all(<span class="number">1</span>)(<span class="number">3</span>)(<span class="number">5</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>Will output</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></tbody></table></figure>
+<p>Since this is a self-reference process.<br>More complex code:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_sums</span>(<span class="params">x</span>):</span><br><span class="line">&nbsp;<span class="built_in">print</span>(x)</span><br><span class="line">&nbsp;<span class="keyword">def</span> <span class="title function_">next_sum</span>(<span class="params">y</span>):</span><br><span class="line">&nbsp; <span class="keyword">return</span> print_sums(x+y)</span><br><span class="line">&nbsp;<span class="keyword">return</span> next_sum</span><br><span class="line"></span><br><span class="line">print_sums(<span class="number">1</span>)(<span class="number">3</span>)(<span class="number">5</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>Will output</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Nonlocal"><a href="#Nonlocal" class="headerlink" title="Nonlocal"></a>Nonlocal</h3><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">make_fib</span>():</span><br><span class="line">    fa = <span class="number">0</span></span><br><span class="line">    fb = <span class="number">1</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">fibpp</span>():</span><br><span class="line">        <span class="keyword">nonlocal</span> fa, fb</span><br><span class="line">        fb = fa + fb</span><br><span class="line">        fa, fb = fb, fa</span><br><span class="line">        <span class="keyword">return</span> fb</span><br><span class="line">    <span class="keyword">return</span> fibpp</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h3><ul>
+<li>Immutable, or cannot change its value after created  </li>
+<li>Single tuple: <code>2,</code>  </li>
+<li>No need to put parenthesis</li>
+</ul>
+<h3 id="yield-and-yield-from"><a href="#yield-and-yield-from" class="headerlink" title="yield and `yield from"></a><code>yield</code> and `yield from</h3><p><code>yield from &lt;expression&gt;</code> can be considered as <code>iter(&lt;expression&gt;)</code></p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">prefixes</span>(<span class="params">s</span>):</span><br><span class="line">    <span class="string">"""Yield all prefixes of s.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; list(prefixes('both'))</span></span><br><span class="line"><span class="string">    ['b', 'bo', 'bot', 'both']</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> s:</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> prefixes(s[:-<span class="number">1</span>])</span><br><span class="line">        <span class="keyword">yield</span> s</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Memoisation"><a href="#Memoisation" class="headerlink" title="Memoisation"></a>Memoisation</h3><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">memo</span>(<span class="params">f</span>): <span class="comment"># Memoization</span></span><br><span class="line">  cache = {}</span><br><span class="line">  <span class="keyword">def</span> <span class="title function_">memoized</span>(<span class="params">n</span>): <span class="comment"># Keys are arguments that map to return value</span></span><br><span class="line">    <span class="keyword">if</span> n <span class="keyword">not</span> <span class="keyword">in</span> cache:</span><br><span class="line">      cache[n] = f(n)</span><br><span class="line">    <span class="keyword">return</span> memoized <span class="comment"># Same behaviour as f if f is a pure function</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Looped-Linked-List"><a href="#Looped-Linked-List" class="headerlink" title="Looped Linked List"></a>Looped Linked List</h3><p><img src="/2024/02/22/UCB_CS61A_Review/fig_61a_recursive_list_change.png" alt="Looped Linked List"></p>
+<h3 id="Symbolic-Programming"><a href="#Symbolic-Programming" class="headerlink" title="Symbolic Programming"></a>Symbolic Programming</h3><p>类似 Matlab 中的 <code>syms</code>，用于科学计算，但 61A 中并没有多提</p>
+<figure class="highlight scheme"><table><tbody><tr><td class="code"><pre><span class="line">scm&gt; (<span class="name"><span class="built_in">define</span></span> a <span class="number">1</span>)</span><br><span class="line">a</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">define</span></span> b <span class="number">2</span>)</span><br><span class="line">b</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">list</span></span> a b)</span><br><span class="line">(<span class="name">1</span> <span class="number">2</span>)</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">list</span></span> <span class="symbol">'a</span> <span class="symbol">'b</span>)</span><br><span class="line">(<span class="name">a</span> b)</span><br><span class="line">scm&gt; <span class="symbol">'a</span></span><br><span class="line">a</span><br><span class="line">scm&gt; (<span class="name"><span class="built_in">quote</span></span> a)</span><br><span class="line">a</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Parsing"><a href="#Parsing" class="headerlink" title="Parsing"></a>Parsing</h3><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">  Text --Lexical Analysis--&gt; Tokens --Syntactic Analysis--&gt; Expression</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Tail-Recursion"><a href="#Tail-Recursion" class="headerlink" title="Tail Recursion"></a>Tail Recursion</h3><ol>
+<li>The last body sub-expression in a lambda expression  </li>
+<li>Sub-expressions 2 &amp; 3 in a tail context <code>if</code> expression</li>
+</ol>
+<p>Referential Transparency:  </p>
+<blockquote>
+<p>引用透明性：一个表达式在给定程序中是引用透明的，如果对于任何表达式，所有的实例都可以被其计算结果所替代，而不改变程序的行为。这意味着，如果一个函数对于相同的输入总是产生相同的结果，并且在执行过程中不产生任何可观察的副作用（如修改全局变量、进行 I/O 操作等），那么这个函数就是引用透明的。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算机科学</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>SQL</tag>
+        <tag>Scheme</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【持续更新】命令行使用笔记</title>
     <url>/2024/02/11/cli-notes/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 11 日：</p>
@@ -141,12 +201,13 @@ n\ln\left( 1+\frac{1}{n} \right) &= \frac{1}{\Delta x} \ln(1+\Delta x) \\
   <entry>
     <title>修复 Obsidian v1.5 下插件 Annotator 无法运行的问题</title>
     <url>/2023/12/30/Fix-Annotator-Ob1-5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>备注：本文默认用户</p>
-<ul>
-<li>已安装 <code>node.js</code></li>
-<li>使用的是 Windows 11 操作系统</li>
-</ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Annotator 已推出支持 Obsidian v1.5 的版本，故本文仅作存档。</p>
 <span id="more"></span>
+<p>备注：本文默认用户</p>
+<ul>
+<li>已安装 <code>node.js</code>  </li>
+<li>使用的是 Windows 11 操作系统  </li>
+</ul>
 <ol>
 <li><p>检测是否安装 <code>node.js</code> 与 <code>npm</code></p>
 <figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">node <span class="literal">-v</span></span><br><span class="line">npm <span class="literal">-v</span> </span><br></pre></td></tr></tbody></table></figure>
