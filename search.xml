@@ -21,6 +21,18 @@
 </ul>
 </li>
 </ul>
+<h3 id="Evaluation-Rule-for-Call-Expressions"><a href="#Evaluation-Rule-for-Call-Expressions" class="headerlink" title="Evaluation Rule for Call Expressions"></a>Evaluation Rule for Call Expressions</h3><ol>
+<li>Evaluate the operator and then the operand subexpressions.</li>
+<li><em>Apply</em> the <em>function</em> that is the value of the operator to the <em>arguments</em> of the operands<br>This tells the reason why a function cannot act as a control statement<br>For example:</li>
+</ol>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">if_</span>(<span class="params">c, t, f</span>):</span><br><span class="line"> <span class="keyword">if</span> c:</span><br><span class="line">  <span class="keyword">return</span> t</span><br><span class="line"> <span class="keyword">else</span>:</span><br><span class="line">  <span class="keyword">return</span> f</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">real_sqrt</span>(<span class="params">x</span>):</span><br><span class="line"> <span class="string">"""The real part of the square root of X."""</span></span><br><span class="line"> <span class="keyword">return</span> if_(x&gt;<span class="number">0</span>, sqrt(x), <span class="number">0.0</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>If we input <code>real_sqrt(-4)</code> error will be reported since:</p>
+<ul>
+<li><code>-4&gt;0</code> is already false, the return statement cannot work.</li>
+</ul>
+<blockquote>
+<p>函数的参数不能达到和控制语句一样的效果，因为实参会被计算。</p>
+</blockquote>
 <h3 id="自调用"><a href="#自调用" class="headerlink" title="自调用"></a>自调用</h3><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_all</span>(<span class="params">x</span>):</span><br><span class="line">&nbsp;<span class="built_in">print</span>(x)</span><br><span class="line">&nbsp;<span class="keyword">return</span> print_all</span><br><span class="line"></span><br><span class="line">print_all(<span class="number">1</span>)(<span class="number">3</span>)(<span class="number">5</span>)</span><br></pre></td></tr></tbody></table></figure>
 <p>Will output</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></tbody></table></figure>
