@@ -253,8 +253,10 @@ If <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;
   <entry>
     <title>【持续更新】命令行使用笔记</title>
     <url>/2024/02/11/cli-notes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 11 日：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 3 月 5 日：</p>
 <span id="more"></span>
+<h3 id="Powershell-配置文件"><a href="#Powershell-配置文件" class="headerlink" title="Powershell 配置文件"></a>Powershell 配置文件</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">Test-Path</span> <span class="variable">$PROFILE</span></span><br><span class="line">False</span><br><span class="line">&gt; <span class="built_in">New-Item</span> <span class="literal">-Type</span> File <span class="literal">-Path</span> <span class="variable">$PROFILE</span> <span class="literal">-Force</span> <span class="comment"># If Test-Path $PROFILE &gt; True, then neglect this line</span></span><br><span class="line">&gt; code <span class="variable">$PROFILE</span></span><br></pre></td></tr></tbody></table></figure>
+<p>更新于 2024 年 2 月 11 日：</p>
 <h3 id="Powershell-VI-Mode"><a href="#Powershell-VI-Mode" class="headerlink" title="Powershell VI Mode"></a>Powershell VI Mode</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">Set-PSReadLineOption</span> <span class="literal">-EditMode</span> Vi</span><br></pre></td></tr></tbody></table></figure>
 <p>几乎等效于 Unix Shell 中的 <code>set -o vi</code></p>
 <h3 id="Powershell-执行策略"><a href="#Powershell-执行策略" class="headerlink" title="Powershell 执行策略"></a>Powershell 执行策略</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">get-executionpolicy</span></span><br><span class="line">Restricted</span><br><span class="line">&gt; <span class="built_in">set-executionpolicy</span> remotesigned</span><br></pre></td></tr></tbody></table></figure>
