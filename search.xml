@@ -251,27 +251,6 @@ If <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;
       </tags>
   </entry>
   <entry>
-    <title>【持续更新】命令行使用笔记</title>
-    <url>/2024/02/11/cli-notes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 3 月 5 日：</p>
-<span id="more"></span>
-<h3 id="Powershell-配置文件"><a href="#Powershell-配置文件" class="headerlink" title="Powershell 配置文件"></a>Powershell 配置文件</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">Test-Path</span> <span class="variable">$PROFILE</span></span><br><span class="line">False</span><br><span class="line">&gt; <span class="built_in">New-Item</span> <span class="literal">-Type</span> File <span class="literal">-Path</span> <span class="variable">$PROFILE</span> <span class="literal">-Force</span> <span class="comment"># If Test-Path $PROFILE &gt; True, then neglect this line</span></span><br><span class="line">&gt; code <span class="variable">$PROFILE</span></span><br></pre></td></tr></tbody></table></figure>
-<p>更新于 2024 年 2 月 11 日：</p>
-<h3 id="Powershell-VI-Mode"><a href="#Powershell-VI-Mode" class="headerlink" title="Powershell VI Mode"></a>Powershell VI Mode</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">Set-PSReadLineOption</span> <span class="literal">-EditMode</span> Vi</span><br></pre></td></tr></tbody></table></figure>
-<p>几乎等效于 Unix Shell 中的 <code>set -o vi</code></p>
-<h3 id="Powershell-执行策略"><a href="#Powershell-执行策略" class="headerlink" title="Powershell 执行策略"></a>Powershell 执行策略</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">get-executionpolicy</span></span><br><span class="line">Restricted</span><br><span class="line">&gt; <span class="built_in">set-executionpolicy</span> remotesigned</span><br></pre></td></tr></tbody></table></figure>
-<p>更新于 2024 年 2 月 2 日：</p>
-<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><p>在 <em>Windows Powershell</em> 中，<code>clear-host</code> 或 <code>cls</code> 可用于清除 Terminal 中的显示的内容。<br><code>ctrl-l</code>，这是一个可以在大多数 <em>Unix-Based CLI</em> 与 <em>Powershell</em> 中都可用的清屏命令，与上文提到的 <code>cls</code> 和 Unix-Based 的 <code>clear</code> 不同的是，<code>ctrl-l</code> 在大多数情况下只是使得前文不可见，并非真正” 清除 “了屏幕上的内容。</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【持续更新】VIM 使用笔记</title>
     <url>/2024/02/02/vim-notes/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 2 日：</p>
@@ -289,6 +268,94 @@ If <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;
       </categories>
       <tags>
         <tag>VIM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【持续更新】命令行使用笔记</title>
+    <url>/2024/02/02/cli-notes/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 3 月 8 日：</p>
+<span id="more"></span>
+<h3 id="Windows-mklink"><a href="#Windows-mklink" class="headerlink" title="Windows mklink"></a>Windows mklink</h3><p>看 <a href="https://github.com/dalcde">Dexter Chua</a> 的 <a href="https://dec41.user.srcf.net/notes/">Cambridge Notes</a> 里的 <code>tex</code><a href="https://github.com/dalcde/cam-notes">源文件</a>发现的，记录一下。</p>
+<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">mklink [[/<span class="type">d</span>] | [/<span class="type">h</span>] | [/<span class="type">j</span>]] &lt;link&gt; &lt;target&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>其中：<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<ul>
+<li><code>/d</code> 创建一个目录的符号链接 (Symbolic Link)</li>
+<li><code>/h</code> 创建一个硬链接 (Hard Link)</li>
+<li><code>/j</code> 创建一个目录的联接 (Junction)</li>
+<li><code>&lt;link&gt;</code> 是新的链接的名称</li>
+<li><code>&lt;target&gt;</code> 是新的链接指向的目标</li>
+</ul>
+<p>详解其区别：<sup><a href="#fn_2" id="reffn_2">2</a></sup></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th> 是否连接文件</th>
+<th>是否连接目录</th>
+<th>是否支持跨卷</th>
+<th>可否指向不存在的目标</th>
+<th>如何删除</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>快捷方式</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>删除快捷方式</td>
+</tr>
+<tr>
+<td>硬链接</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+<td>删除源文件</td>
+</tr>
+<tr>
+<td>符号链接</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>删除链接 (<code>RD</code> 或 <code>Del</code>)</td>
+</tr>
+<tr>
+<td> 联接</td>
+<td>否</td>
+<td>是</td>
+<td>是（同一计算机）</td>
+<td>是</td>
+<td>删除链接</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>更新于 2024 年 3 月 5 日：</p>
+<h3 id="Powershell-别名"><a href="#Powershell-别名" class="headerlink" title="Powershell 别名"></a>Powershell 别名</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">New-Alias</span> <span class="literal">-Name</span> <span class="string">"vim"</span> <span class="string">"C:\Program Files\Vim\vim91\vim.exe"</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Powershell-配置文件"><a href="#Powershell-配置文件" class="headerlink" title="Powershell 配置文件"></a>Powershell 配置文件</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">Test-Path</span> <span class="variable">$PROFILE</span></span><br><span class="line">False</span><br><span class="line">&gt; <span class="built_in">New-Item</span> <span class="literal">-Type</span> File <span class="literal">-Path</span> <span class="variable">$PROFILE</span> <span class="literal">-Force</span> <span class="comment"># If Test-Path $PROFILE &gt; True, then neglect this line</span></span><br><span class="line">&gt; code <span class="variable">$PROFILE</span></span><br></pre></td></tr></tbody></table></figure>
+<p>更新于 2024 年 2 月 11 日：</p>
+<h3 id="Powershell-VI-Mode"><a href="#Powershell-VI-Mode" class="headerlink" title="Powershell VI Mode"></a>Powershell VI Mode</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">Set-PSReadLineOption</span> <span class="literal">-EditMode</span> [<span class="type">Vi</span> | <span class="type">Emacs</span>]</span><br></pre></td></tr></tbody></table></figure>
+<p>几乎等效于 Unix Shell 中的 <code>set -o vi</code></p>
+<h3 id="Powershell-执行策略"><a href="#Powershell-执行策略" class="headerlink" title="Powershell 执行策略"></a>Powershell 执行策略</h3><figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">&gt; <span class="built_in">get-executionpolicy</span></span><br><span class="line">Restricted</span><br><span class="line">&gt; <span class="built_in">set-executionpolicy</span> remotesigned</span><br></pre></td></tr></tbody></table></figure>
+<p>更新于 2024 年 2 月 2 日：</p>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><p>在 <em>Windows Powershell</em> 中，<code>clear-host</code> 或 <code>cls</code> 可用于清除 Terminal 中的显示的内容。<br><code>ctrl-l</code>，这是一个可以在大多数 <em>Unix-Based CLI</em> 与 <em>Powershell</em> 中都可用的清屏命令，与上文提到的 <code>cls</code> 和 Unix-Based 的 <code>clear</code> 不同的是，<code>ctrl-l</code> 在大多数情况下只是使得前文不可见，并非真正” 清除 “了屏幕上的内容。</p>
+<blockquote id="fn_1">
+<sup>1</sup>. <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink">mklink</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. <a href="https://ss64.com/nt/mklink.html">SS64</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
