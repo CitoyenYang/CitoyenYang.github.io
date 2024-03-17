@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2024-02-28T19:48:08.393Z</updated>
+  <updated>2024-03-12T03:00:04.045Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【调包侠传奇】自用脚本</title>
+    <link href="https://citoyenyang.github.io/2024/03/12/my-scripts/"/>
+    <id>https://citoyenyang.github.io/2024/03/12/my-scripts/</id>
+    <published>2024-03-12T02:40:57.000Z</published>
+    <updated>2024-03-12T03:00:04.045Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;个人学习生活中常用的脚本分享。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://citoyenyang.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Python" scheme="https://citoyenyang.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Basic Mathematics Cheatsheet</title>
@@ -103,12 +122,10 @@
     <link href="https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/"/>
     <id>https://citoyenyang.github.io/2024/01/25/pf-ddx-pwr-fx/</id>
     <published>2024-01-25T17:41:49.000Z</published>
-    <updated>2024-02-07T01:55:01.539Z</updated>
+    <updated>2024-03-09T17:46:21.935Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Basic theorem&lt;/em&gt;&lt;/strong&gt;:&lt;/p&gt;
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;
-&#92;frac{&#92;text{d}}{&#92;text{d}x} a^x = &#92;ln(a) a^x&lt;/script&gt;</summary>
+    <summary type="html">&lt;p&gt;看 MIT 18.01 的 Lecture 觉得有意思就记了下来。&lt;/p&gt;</summary>
     
     
     
