@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【图一乐】胶水了一个 vim_AHK + CapsLockCtrlEscape</title>
+    <url>/2024/03/27/ahk-combined/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://github.com/CitoyenYang/vim_ahk">项目地址</a></p>
+<span id="more"></span>
+<p>还是太闲了，把 <a href="https://gist.github.com/sedm0784/4443120">CapsLockCtrlEscape.ahk</a> 和 <a href="https://github.com/rcmdnk/vim_ahk">vim_ahk</a> 合并了一下，顺便在 VimGroup 中删了一些现在 Vim Mode 已经十分完备的软件，加上 QQ，微信，MATLAB，Discord 和 zotero。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>【调包侠传奇】自用脚本</title>
     <url>/2024/03/12/my-scripts/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>个人学习生活中常用的脚本分享。</p>
