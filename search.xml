@@ -277,32 +277,13 @@ If <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.09ex;
       </tags>
   </entry>
   <entry>
-    <title>【持续更新】VIM 使用笔记</title>
-    <url>/2024/02/02/vim-notes/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 2 月 2 日：</p>
-<span id="more"></span>
-<h3 id="删除一个单词"><a href="#删除一个单词" class="headerlink" title="删除一个单词"></a>删除一个单词</h3><ul>
-<li><code>dw</code> 删除当前词中光标后面的字母</li>
-<li><code>db</code> 删除当前词中光标前面的字母</li>
-<li><code>daw</code> 删除当前词</li>
-<li><code>bdw</code> 删除当前词</li>
-</ul>
-<p>若使用删除后插入，则将 <code>d</code> 改为 <code>c</code><del>（废话）</del></p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>VIM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【持续更新】命令行使用笔记</title>
     <url>/2024/02/02/cli-notes/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>更新于 2024 年 3 月 8 日：</p>
 <span id="more"></span>
 <h3 id="Windows-mklink"><a href="#Windows-mklink" class="headerlink" title="Windows mklink"></a>Windows mklink</h3><p>看 <a href="https://github.com/dalcde">Dexter Chua</a> 的 <a href="https://dec41.user.srcf.net/notes/">Cambridge Notes</a> 里的 <code>tex</code><a href="https://github.com/dalcde/cam-notes">源文件</a>发现的，记录一下。</p>
-<figure class="highlight powershell"><table><tbody><tr><td class="code"><pre><span class="line">mklink [[/<span class="type">d</span>] | [/<span class="type">h</span>] | [/<span class="type">j</span>]] &lt;link&gt; &lt;target&gt;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">mklink [[/d] | [/h] | [/j]] &lt;link&gt; &lt;target&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>（Powershell 中与 mklink 等效的命令完美继承了 Powershell 又臭又长的命名风格，所以这里就不记录了）</p>
 <p>其中：<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
 <ul>
 <li><code>/d</code> 创建一个目录的符号链接 (Symbolic Link)</li>
