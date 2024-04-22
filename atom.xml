@@ -6,7 +6,7 @@
   <link href="https://citoyenyang.github.io/atom.xml" rel="self"/>
   
   <link href="https://citoyenyang.github.io/"/>
-  <updated>2024-03-27T11:47:47.127Z</updated>
+  <updated>2024-04-22T18:05:41.151Z</updated>
   <id>https://citoyenyang.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>玩玩 YOLOv8</title>
+    <link href="https://citoyenyang.github.io/2024/04/22/yolov8-preview/"/>
+    <id>https://citoyenyang.github.io/2024/04/22/yolov8-preview/</id>
+    <published>2024-04-22T17:05:11.000Z</published>
+    <updated>2024-04-22T18:05:41.151Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;近日心血来潮，想做个自动分类图像，于是决定试试 YOLOv8，但 YOLOv8 的文档写得一般般，再加上我个人没有 PyTorch 经验，遂撰此文记录我遇到的问题和一些中文社区没有的资料。  &lt;/p&gt;
+&lt;p&gt;这两天标数据集标得眼都花了，给了我这个不玩竞技类 FPS 游戏的一种练定位的感觉。&lt;/p&gt;
+&lt;p&gt;本文假设：&lt;/p&gt;
+&lt;p&gt;读者有一定的 Python 基础，没有接触过 PyTorch 等深度学习框架&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="人工智能" scheme="https://citoyenyang.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+    <category term="计算机视觉" scheme="https://citoyenyang.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+    
+  </entry>
   
   <entry>
     <title>【图一乐】胶水了一个 vim_AHK + CapsLockCtrlEscape</title>
